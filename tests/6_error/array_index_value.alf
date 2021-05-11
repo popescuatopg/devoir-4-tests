@@ -1,0 +1,3 @@
+/* Array index value error */
+
+string array a [90 : 45];

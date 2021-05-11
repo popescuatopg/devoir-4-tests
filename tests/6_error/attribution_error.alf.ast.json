@@ -1,0 +1,44 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "integer",
+                    "title": "a",
+                    "line": 3
+                }
+            ],
+            "line": 3
+        },
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "string",
+                    "title": "s",
+                    "line": 4
+                }
+            ],
+            "line": 4
+        },
+        {
+            "id": "Assign",
+            "to": {
+                "id": "Variable",
+                "title": "a",
+                "line": 6
+            },
+            "from": {
+                "id": "Variable",
+                "title": "s",
+                "line": 6
+            },
+            "line": 6
+        }
+    ],
+    "line": 6
+ }

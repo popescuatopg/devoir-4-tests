@@ -1,0 +1,229 @@
+{
+  "symbol_table": [
+    {
+      "variables": {
+        "v": {
+          "type": "auto",
+          "value": {
+            "id": "FunctionCall",
+            "function_name": "power",
+            "parameters": [
+              {
+                "id": "FunctionCallParameter",
+                "name": "a",
+                "value": {
+                  "id": "Value",
+                  "type": "integer",
+                  "value": 6,
+                  "line": 3
+                }
+              },
+              {
+                "id": "FunctionCallParameter",
+                "name": "n",
+                "value": {
+                  "id": "Value",
+                  "type": "integer",
+                  "value": 6,
+                  "line": 3
+                }
+              }
+            ],
+            "line": 3,
+            "symbol": 0,
+            "type": ""
+          },
+          "line": 3
+        }
+      },
+      "functions": {
+        "power": {
+          "type": "float",
+          "parameters": [
+            {
+              "id": "FunctionDefinitionParameter",
+              "symbol": 1
+            },
+            {
+              "id": "FunctionDefinitionParameter",
+              "symbol": 1
+            }
+          ],
+          "line": 12,
+          "symbol": 1
+        }
+      },
+      "types": {},
+      "type": "Statements"
+    },
+    {
+      "variables": {
+        "p": {
+          "type": "auto",
+          "value": {
+            "id": "Value",
+            "type": "integer",
+            "value": 1,
+            "line": 7,
+            "symbol": 1
+          },
+          "line": 7
+        }
+      },
+      "functions": {},
+      "types": {},
+      "parent": 0,
+      "type": "function",
+      "function": "power",
+      "return_type": "float"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "auto",
+            "title": "v",
+            "value": {
+              "id": "FunctionCall",
+              "function_name": "power",
+              "parameters": [
+                {
+                  "id": "FunctionCallParameter",
+                  "name": "a",
+                  "value": {
+                    "id": "Value",
+                    "type": "integer",
+                    "value": 6,
+                    "line": 3
+                  }
+                },
+                {
+                  "id": "FunctionCallParameter",
+                  "name": "n",
+                  "value": {
+                    "id": "Value",
+                    "type": "integer",
+                    "value": 6,
+                    "line": 3
+                  }
+                }
+              ],
+              "line": 3,
+              "symbol": 0,
+              "type": ""
+            },
+            "line": 3
+          }
+        ],
+        "line": 3,
+        "symbol": 0
+      },
+      {
+        "id": "FunctionDefinition",
+        "title": "power",
+        "parameters": [
+          {
+            "id": "FunctionDefinitionParameter",
+            "symbol": 1
+          },
+          {
+            "id": "FunctionDefinitionParameter",
+            "symbol": 1
+          }
+        ],
+        "return_type": "float",
+        "statements": [
+          {
+            "id": "Declaration",
+            "elements": [
+              {
+                "id": "DeclarationElement",
+                "type": "auto",
+                "title": "p",
+                "value": {
+                  "id": "Value",
+                  "type": "integer",
+                  "value": 1,
+                  "line": 7,
+                  "symbol": 1
+                },
+                "line": 7
+              }
+            ],
+            "line": 7,
+            "symbol": 1
+          },
+          {
+            "id": "ForLoop",
+            "variable": "i",
+            "from": {
+              "id": "Value",
+              "type": "integer",
+              "value": 1,
+              "line": 8
+            },
+            "to": {
+              "id": "Variable",
+              "title": "n",
+              "line": 8
+            },
+            "statements": [
+              {
+                "id": "Assign",
+                "to": {
+                  "id": "Variable",
+                  "title": "p",
+                  "line": 9
+                },
+                "from": {
+                  "id": "Expression",
+                  "op": "*",
+                  "left": {
+                    "id": "Value",
+                    "line": 9
+                  },
+                  "right": {
+                    "id": "Value",
+                    "line": 9
+                  },
+                  "line": 9
+                },
+                "line": 9
+              }
+            ],
+            "line": 10
+          },
+          {
+            "id": "ReturnFunction",
+            "value": {
+              "id": "Value",
+              "line": 11,
+              "symbol": 1
+            },
+            "line": 11,
+            "symbol": 1
+          }
+        ],
+        "line": 12,
+        "symbol": 1
+      }
+    ],
+    "line": 12,
+    "symbol": 0
+  },
+  "error_list": [
+    {
+      "type": "UNDEFINED_FUNCTION",
+      "line": 3,
+      "elements": {
+        "id": "power"
+      },
+      "text": "Undefined function power"
+    }
+  ]
+}

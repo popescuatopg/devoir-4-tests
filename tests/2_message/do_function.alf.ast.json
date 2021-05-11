@@ -1,0 +1,37 @@
+{
+   "id": "Statements",
+   "statements": [
+       {
+           "id": "FunctionDefinition",
+           "title": "print",
+           "parameters": [
+               {
+                   "id": "FunctionDefinitionParameter",
+                   "type": "string",
+                   "name": "text"
+               }
+           ],
+           "return_type": "string",
+           "statements": [],
+           "line": 2
+       },
+       {
+           "id": "FunctionCall",
+           "function_name": "print",
+           "parameters": [
+               {
+                   "id": "FunctionCallParameter",
+                   "name": "text",
+                   "value": {
+                       "id": "Value",
+                       "type": "string",
+                       "value": "text to write",
+                       "line": 4
+                   }
+               }
+           ],
+           "line": 4
+       }
+   ],
+   "line": 4
+}

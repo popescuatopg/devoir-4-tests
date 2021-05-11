@@ -1,0 +1,211 @@
+{
+  "symbol_table": [
+    {
+      "variables": {
+        "n": {
+          "type": "integer",
+          "line": 3
+        }
+      },
+      "functions": {},
+      "types": {},
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "integer",
+            "title": "n",
+            "line": 3
+          }
+        ],
+        "line": 3,
+        "symbol": 0
+      },
+      {
+        "id": "Expression",
+        "op": "and",
+        "left": {
+          "id": "Expression",
+          "op": ">",
+          "left": {
+            "id": "Expression",
+            "op": "/",
+            "left": {
+              "id": "Expression",
+              "op": "*",
+              "left": {
+                "id": "Expression",
+                "op": "+",
+                "left": {
+                  "id": "Value",
+                  "type": "integer",
+                  "value": 2,
+                  "line": 5,
+                  "symbol": 0
+                },
+                "right": {
+                  "id": "Value",
+                  "type": "integer",
+                  "value": 3,
+                  "line": 5,
+                  "symbol": 0
+                },
+                "line": 5,
+                "symbol": 0,
+                "type": "integer"
+              },
+              "right": {
+                "id": "Value",
+                "type": "integer",
+                "value": 7,
+                "line": 5,
+                "symbol": 0
+              },
+              "line": 5,
+              "symbol": 0,
+              "type": "integer"
+            },
+            "right": {
+              "id": "Value",
+              "type": "integer",
+              "value": 8,
+              "line": 5,
+              "symbol": 0
+            },
+            "line": 5,
+            "symbol": 0,
+            "type": "integer"
+          },
+          "right": {
+            "id": "Value",
+            "type": "integer",
+            "value": 10,
+            "line": 5,
+            "symbol": 0
+          },
+          "line": 5,
+          "symbol": 0,
+          "type": "boolean"
+        },
+        "right": {
+          "id": "Expression",
+          "op": "xor",
+          "left": {
+            "id": "Expression",
+            "op": "or",
+            "left": {
+              "id": "Expression",
+              "op": "<",
+              "left": {
+                "id": "Expression",
+                "op": "+",
+                "left": {
+                  "id": "Value",
+                  "type": "integer",
+                  "value": 7,
+                  "line": 5,
+                  "symbol": 0
+                },
+                "right": {
+                  "id": "Value",
+                  "type": "integer",
+                  "value": 5,
+                  "line": 5,
+                  "symbol": 0
+                },
+                "line": 5,
+                "symbol": 0,
+                "type": "integer"
+              },
+              "right": {
+                "id": "Value",
+                "type": "integer",
+                "value": 5,
+                "line": 5,
+                "symbol": 0
+              },
+              "line": 5,
+              "symbol": 0,
+              "type": "boolean"
+            },
+            "right": {
+              "id": "Expression",
+              "op": "==",
+              "left": {
+                "id": "Value",
+                "type": "string",
+                "value": "test",
+                "line": 5,
+                "symbol": 0
+              },
+              "right": {
+                "id": "Expression",
+                "op": "+",
+                "left": {
+                  "id": "Value",
+                  "type": "string",
+                  "value": "te",
+                  "line": 5,
+                  "symbol": 0
+                },
+                "right": {
+                  "id": "Value",
+                  "type": "string",
+                  "value": "st",
+                  "line": 5,
+                  "symbol": 0
+                },
+                "line": 5,
+                "symbol": 0,
+                "type": "string"
+              },
+              "line": 5,
+              "symbol": 0,
+              "type": "boolean"
+            },
+            "line": 5,
+            "symbol": 0,
+            "type": "boolean"
+          },
+          "right": {
+            "id": "Expression",
+            "op": "!=",
+            "left": {
+              "id": "Value",
+              "type": "integer",
+              "value": 7,
+              "line": 5,
+              "symbol": 0
+            },
+            "right": {
+              "id": "Variable",
+              "title": "n",
+              "line": 5,
+              "symbol": 0,
+              "type": "integer"
+            },
+            "line": 5,
+            "symbol": 0,
+            "type": "boolean"
+          },
+          "line": 5,
+          "symbol": 0,
+          "type": "boolean"
+        },
+        "line": 5,
+        "symbol": 0,
+        "type": "boolean"
+      }
+    ],
+    "line": 5,
+    "symbol": 0
+  },
+  "error_list": []
+}

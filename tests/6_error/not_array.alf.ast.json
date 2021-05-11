@@ -1,0 +1,39 @@
+{
+   "id": "Statements",
+   "statements": [
+       {
+           "id": "Declaration",
+           "elements": [
+               {
+                   "id": "DeclarationElement",
+                   "type": "string",
+                   "title": "v",
+                   "line": 3
+               }
+           ],
+           "line": 3
+       },
+       {
+           "id": "Assign",
+           "to": {
+               "id": "ArrayElement",
+               "array": "v",
+               "index": {
+                   "id": "Value",
+                   "type": "integer",
+                   "value": 1,
+                   "line": 5
+               },
+               "line": 5
+           },
+           "from": {
+               "id": "Value",
+               "type": "string",
+               "value": "some text",
+               "line": 5
+           },
+           "line": 5
+       }
+   ],
+   "line": 5
+}

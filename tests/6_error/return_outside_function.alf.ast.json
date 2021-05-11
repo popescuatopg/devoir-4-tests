@@ -1,0 +1,16 @@
+{
+   "id": "Statements",
+   "statements": [
+       {
+           "id": "ReturnFunction",
+           "value": {
+               "id": "Value",
+               "type": "integer",
+               "value": 90,
+               "line": 3
+           },
+           "line": 3
+       }
+   ],
+   "line": 3
+}

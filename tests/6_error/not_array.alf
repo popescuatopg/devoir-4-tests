@@ -1,0 +1,5 @@
+/* Not an array */
+
+declare string v;
+
+v[1] = "some text";

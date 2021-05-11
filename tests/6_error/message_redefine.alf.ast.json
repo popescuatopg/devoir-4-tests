@@ -1,0 +1,42 @@
+{
+   "id": "Statements",
+   "statements": [
+       {
+           "id": "Declaration",
+           "elements": [
+               {
+                   "id": "DeclarationElement",
+                   "type": "integer",
+                   "title": "f",
+                   "value": {
+                       "id": "Value",
+                       "type": "integer",
+                       "value": 190,
+                       "line": 3
+                   },
+                   "line": 3
+               }
+           ],
+           "line": 3
+       },
+       {
+           "id": "Declaration",
+           "elements": [
+               {
+                   "id": "DeclarationElement",
+                   "type": "integer",
+                   "title": "f",
+                   "value": {
+                       "id": "Value",
+                       "type": "integer",
+                       "value": 190,
+                       "line": 5
+                   },
+                   "line": 5
+               }
+           ],
+           "line": 5
+       }
+   ],
+   "line": 5
+}

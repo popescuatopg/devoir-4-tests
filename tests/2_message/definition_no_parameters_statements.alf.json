@@ -1,0 +1,65 @@
+{
+  "symbol_table": [
+    {
+      "variables": {},
+      "functions": {
+        "say": {
+          "type": "string",
+          "parameters": [],
+          "line": 8,
+          "symbol": 1
+        }
+      },
+      "types": {},
+      "type": "Statements"
+    },
+    {
+      "variables": {},
+      "functions": {},
+      "types": {},
+      "parent": 0,
+      "type": "function",
+      "function": "say",
+      "return_type": "string"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "FunctionDefinition",
+        "title": "say",
+        "parameters": [],
+        "return_type": "string",
+        "statements": [
+          {
+            "id": "Value",
+            "type": "string",
+            "value": "say1",
+            "line": 5,
+            "symbol": 1
+          },
+          {
+            "id": "Value",
+            "type": "string",
+            "value": "say2",
+            "line": 6,
+            "symbol": 1
+          },
+          {
+            "id": "Value",
+            "type": "string",
+            "value": "say3",
+            "line": 7,
+            "symbol": 1
+          }
+        ],
+        "line": 8,
+        "symbol": 1
+      }
+    ],
+    "line": 8,
+    "symbol": 0
+  },
+  "error_list": []
+}

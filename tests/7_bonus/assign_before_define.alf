@@ -1,0 +1,5 @@
+/* Assign before define */
+
+declare x = y;
+
+declare integer y;

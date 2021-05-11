@@ -1,0 +1,5 @@
+/* redefinition */
+
+declare integer f =  190;
+
+declare integer f = 190;

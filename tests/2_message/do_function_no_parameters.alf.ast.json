@@ -1,0 +1,27 @@
+{
+   "id": "Statements",
+   "statements": [
+       {
+           "id": "FunctionDefinition",
+           "title": "_getpid",
+           "parameters": [],
+           "return_type": "integer",
+           "statements": [
+               {
+                   "id": "Value",
+                   "type": "integer",
+                   "value": 120,
+                   "line": 2
+               }
+           ],
+           "line": 2
+       },
+       {
+           "id": "FunctionCall",
+           "function_name": "_getpid",
+           "parameters": [],
+           "line": 4
+       }
+   ],
+   "line": 4
+}

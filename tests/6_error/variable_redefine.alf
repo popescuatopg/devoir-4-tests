@@ -1,0 +1,7 @@
+/* Variable redefinition */
+
+declare integer a;
+
+a = 190;
+
+declare integer a;

@@ -1,0 +1,12 @@
+/* Function parameters */
+
+function power (float a, integer n): float
+begin
+	declare p = 1;
+	for i from 1 to n start
+		p = p * a;
+	finish;
+	return p;
+end;
+
+exec power (a="6.0", n=6);

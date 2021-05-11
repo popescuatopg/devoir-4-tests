@@ -1,0 +1,135 @@
+{
+  "symbol_table": [
+    {
+      "variables": {
+        "n": {
+          "type": "integer",
+          "line": 3
+        }
+      },
+      "functions": {
+        "number": {
+          "type": "integer",
+          "parameters": [
+            {
+              "id": "FunctionDefinitionParameter",
+              "type": "integer",
+              "name": "value",
+              "symbol": 1
+            }
+          ],
+          "line": 8,
+          "symbol": 1
+        }
+      },
+      "types": {},
+      "type": "Statements"
+    },
+    {
+      "variables": {},
+      "functions": {},
+      "types": {},
+      "parent": 0,
+      "type": "function",
+      "function": "number",
+      "return_type": "integer"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "integer",
+            "title": "n",
+            "line": 3
+          }
+        ],
+        "line": 3,
+        "symbol": 0
+      },
+      {
+        "id": "FunctionDefinition",
+        "title": "number",
+        "parameters": [
+          {
+            "id": "FunctionDefinitionParameter",
+            "type": "integer",
+            "name": "value",
+            "symbol": 1
+          }
+        ],
+        "return_type": "integer",
+        "statements": [
+          {
+            "id": "Value",
+            "type": "integer",
+            "value": 3,
+            "line": 7,
+            "symbol": 1
+          }
+        ],
+        "line": 8,
+        "symbol": 1
+      },
+      {
+        "id": "Assign",
+        "to": {
+          "id": "Variable",
+          "title": "n",
+          "line": 11,
+          "symbol": 0,
+          "type": "integer"
+        },
+        "from": {
+          "id": "Value",
+          "type": "integer",
+          "value": 3,
+          "line": 11,
+          "symbol": 0
+        },
+        "line": 11,
+        "symbol": 0
+      },
+      {
+        "id": "Expression",
+        "op": "+",
+        "left": {
+          "id": "Expression",
+          "op": "+",
+          "left": {
+            "id": "Value",
+            "line": 12,
+            "symbol": 0
+          },
+          "right": {
+            "id": "FunctionCall",
+            "function_name": "number",
+            "parameters": [],
+            "line": 12,
+            "symbol": 0,
+            "type": "integer"
+          },
+          "line": 12,
+          "symbol": 0
+        },
+        "right": {
+          "id": "Value",
+          "type": "string",
+          "value": " text",
+          "line": 12,
+          "symbol": 0
+        },
+        "line": 12,
+        "symbol": 0,
+        "type": "string"
+      }
+    ],
+    "line": 12,
+    "symbol": 0
+  },
+  "error_list": []
+}

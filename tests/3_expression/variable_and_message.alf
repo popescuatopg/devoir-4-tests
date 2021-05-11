@@ -1,0 +1,12 @@
+/* Expression with variable and message */
+
+declare integer n;
+
+function number (integer value): integer 
+BEGIN
+3+4;
+END
+
+
+n = 3;
+n + exec number() + " text";

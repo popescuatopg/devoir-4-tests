@@ -1,0 +1,50 @@
+{
+  "symbol_table": [
+    {
+      "variables": {},
+      "functions": {},
+      "types": {},
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Expression",
+        "op": "+",
+        "left": {
+          "id": "Value",
+          "type": "boolean",
+          "value": false,
+          "line": 3,
+          "symbol": 0
+        },
+        "right": {
+          "id": "Value",
+          "type": "integer",
+          "value": 90,
+          "line": 3,
+          "symbol": 0
+        },
+        "line": 3,
+        "symbol": 0,
+        "type": ""
+      }
+    ],
+    "line": 3,
+    "symbol": 0
+  },
+  "error_list": [
+    {
+      "type": "TYPE_EXPRESSION",
+      "line": 3,
+      "elements": {
+        "left": "boolean",
+        "right": "integer",
+        "op": "+"
+      },
+      "text": "Type expression error boolean + integer"
+    }
+  ]
+}

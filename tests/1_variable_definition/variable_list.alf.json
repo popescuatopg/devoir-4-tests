@@ -1,0 +1,66 @@
+{
+  "symbol_table": [
+    {
+      "variables": {
+        "n": {
+          "type": "integer",
+          "line": 2
+        },
+        "r": {
+          "type": "float",
+          "line": 2
+        },
+        "l": {
+          "type": "boolean",
+          "line": 2
+        },
+        "s": {
+          "type": "string",
+          "line": 2
+        }
+      },
+      "functions": {},
+      "types": {},
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "integer",
+            "title": "n",
+            "line": 2
+          },
+          {
+            "id": "DeclarationElement",
+            "type": "float",
+            "title": "r",
+            "line": 2
+          },
+          {
+            "id": "DeclarationElement",
+            "type": "boolean",
+            "title": "l",
+            "line": 2
+          },
+          {
+            "id": "DeclarationElement",
+            "type": "string",
+            "title": "s",
+            "line": 2
+          }
+        ],
+        "line": 2,
+        "symbol": 0
+      }
+    ],
+    "line": 2,
+    "symbol": 0
+  },
+  "error_list": []
+}

@@ -1,0 +1,59 @@
+{
+  "symbol_table": [
+    {
+      "variables": {},
+      "functions": {
+        "_getpid": {
+          "type": "integer",
+          "parameters": [],
+          "line": 2,
+          "symbol": 1
+        }
+      },
+      "types": {},
+      "type": "Statements"
+    },
+    {
+      "variables": {},
+      "functions": {},
+      "types": {},
+      "parent": 0,
+      "type": "function",
+      "function": "_getpid",
+      "return_type": "integer"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "FunctionDefinition",
+        "title": "_getpid",
+        "parameters": [],
+        "return_type": "integer",
+        "statements": [
+          {
+            "id": "Value",
+            "type": "integer",
+            "value": 120,
+            "line": 2,
+            "symbol": 1
+          }
+        ],
+        "line": 2,
+        "symbol": 1
+      },
+      {
+        "id": "FunctionCall",
+        "function_name": "_getpid",
+        "parameters": [],
+        "line": 4,
+        "symbol": 0,
+        "type": "integer"
+      }
+    ],
+    "line": 4,
+    "symbol": 0
+  },
+  "error_list": []
+}

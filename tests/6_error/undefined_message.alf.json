@@ -1,0 +1,46 @@
+{
+  "symbol_table": [
+    {
+      "variables": {},
+      "functions": {},
+      "types": {},
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "FunctionCall",
+        "function_name": "print",
+        "parameters": [
+          {
+            "id": "FunctionCallParameter",
+            "name": "text",
+            "value": {
+              "id": "Value",
+              "type": "string",
+              "value": "text to write",
+              "line": 2
+            }
+          }
+        ],
+        "line": 2,
+        "symbol": 0,
+        "type": ""
+      }
+    ],
+    "line": 2,
+    "symbol": 0
+  },
+  "error_list": [
+    {
+      "type": "UNDEFINED_FUNCTION",
+      "line": 2,
+      "elements": {
+        "id": "print"
+      },
+      "text": "Undefined function print"
+    }
+  ]
+}

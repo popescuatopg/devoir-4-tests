@@ -1,0 +1,157 @@
+{
+  "symbol_table": [
+    {
+      "variables": {
+        "v": {
+          "type": "auto",
+          "value": {
+            "id": "Value",
+            "line": 5,
+            "symbol": 0
+          },
+          "line": 5
+        },
+        "s": {
+          "type": "random",
+          "line": 11
+        }
+      },
+      "functions": {},
+      "types": {
+        "details": {
+          "type": "array",
+          "line": 3,
+          "element_type": "string",
+          "from": "1",
+          "to": "9"
+        },
+        "random": {
+          "type": "struct",
+          "properties": [
+            {
+              "id": "LocalProperty",
+              "type": "integer",
+              "title": "position",
+              "line": 8
+            }
+          ]
+        }
+      },
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Array",
+        "title": "details",
+        "element_type": "string",
+        "from": "1",
+        "to": "9",
+        "line": 3,
+        "symbol": 0
+      },
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "auto",
+            "title": "v",
+            "value": {
+              "id": "Value",
+              "line": 5,
+              "symbol": 0
+            },
+            "line": 5
+          }
+        ],
+        "line": 5,
+        "symbol": 0
+      },
+      {
+        "id": "ClassDefinition",
+        "title": "random",
+        "properties": [
+          {
+            "id": "LocalProperty",
+            "type": "integer",
+            "title": "position",
+            "line": 8
+          }
+        ],
+        "line": 9,
+        "symbol": 0
+      },
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "random",
+            "title": "s",
+            "line": 11
+          }
+        ],
+        "line": 11,
+        "symbol": 0
+      },
+      {
+        "id": "Assign",
+        "to": {
+          "id": "ArrayElement",
+          "array": "v",
+          "index": {
+            "id": "ClassProperty",
+            "object": {
+              "id": "Variable",
+              "title": "s",
+              "line": 13,
+              "type": "random",
+              "symbol": 0
+            },
+            "title": "position",
+            "line": 13,
+            "symbol": 0,
+            "type": "integer"
+          },
+          "line": 13,
+          "type": "",
+          "symbol": 0
+        },
+        "from": {
+          "id": "Value",
+          "type": "string",
+          "value": "The new name for the school",
+          "line": 13,
+          "symbol": 0
+        },
+        "line": 13,
+        "symbol": 0
+      }
+    ],
+    "line": 13,
+    "symbol": 0
+  },
+  "error_list": [
+    {
+      "type": "NOT_ARRAY",
+      "line": 13,
+      "elements": {
+        "type": "v"
+      },
+      "text": "v is not an array"
+    },
+    {
+      "type": "TYPE_EXPRESSION",
+      "line": 13,
+      "elements": {
+        "op": "=",
+        "to": "",
+        "from": "string"
+      },
+      "text": "Type expression error  is string"
+    }
+  ]
+}

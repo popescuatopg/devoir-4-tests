@@ -1,0 +1,30 @@
+{
+  "symbol_table": [
+    {
+      "variables": {},
+      "functions": {},
+      "types": {
+        "product": {
+          "type": "struct",
+          "properties": []
+        }
+      },
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "ClassDefinition",
+        "title": "product",
+        "properties": [],
+        "line": 2,
+        "symbol": 0
+      }
+    ],
+    "line": 4,
+    "symbol": 0
+  },
+  "error_list": []
+}

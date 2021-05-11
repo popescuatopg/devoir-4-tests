@@ -1,0 +1,11 @@
+/* Class property */
+
+class school
+	local string name;
+	local bool private;
+	local integer type;
+end;
+
+declare school s;
+
+declare t = s.type;

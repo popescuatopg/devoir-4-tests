@@ -1,0 +1,50 @@
+{
+  "symbol_table": [
+    {
+      "variables": {
+        "variable": {
+          "type": "integer",
+          "value": {
+            "id": "Value",
+            "type": "integer",
+            "value": 0,
+            "line": 2,
+            "symbol": 0
+          },
+          "line": 2
+        }
+      },
+      "functions": {},
+      "types": {},
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "integer",
+            "title": "variable",
+            "value": {
+              "id": "Value",
+              "type": "integer",
+              "value": 0,
+              "line": 2,
+              "symbol": 0
+            },
+            "line": 2
+          }
+        ],
+        "line": 2,
+        "symbol": 0
+      }
+    ],
+    "line": 2,
+    "symbol": 0
+  },
+  "error_list": []
+}

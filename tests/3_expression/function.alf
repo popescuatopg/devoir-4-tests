@@ -1,0 +1,5 @@
+/* Expression with function */
+
+function number:integer => 3;
+
+2+ exec number();

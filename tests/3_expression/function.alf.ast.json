@@ -1,0 +1,38 @@
+{
+   "id": "Statements",
+   "statements": [
+       {
+           "id": "FunctionDefinition",
+           "title": "number",
+           "parameters": [],
+           "return_type": "integer",
+           "statements": [
+               {
+                   "id": "Value",
+                   "type": "integer",
+                   "value": 3,
+                   "line": 3
+               }
+           ],
+           "line": 3
+       },
+       {
+           "id": "Expression",
+           "op": "+",
+           "left": {
+               "id": "Value",
+               "type": "integer",
+               "value": 2,
+               "line": 5
+           },
+           "right": {
+               "id": "FunctionCall",
+               "function_name": "number",
+               "parameters": [],
+               "line": 5
+           },
+           "line": 5
+       }
+   ],
+   "line": 5
+}

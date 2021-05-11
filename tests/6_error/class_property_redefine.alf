@@ -1,0 +1,6 @@
+/* Class property redefinition*/
+
+class s 
+	local string title;
+	local string title ;
+end;

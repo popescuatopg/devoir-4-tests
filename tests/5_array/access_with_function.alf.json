@@ -1,0 +1,98 @@
+{
+  "symbol_table": [
+    {
+      "variables": {
+        "v": {
+          "type": "details",
+          "line": 5
+        }
+      },
+      "functions": {},
+      "types": {
+        "details": {
+          "type": "array",
+          "line": 3,
+          "element_type": "string",
+          "from": "1",
+          "to": "9"
+        }
+      },
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Array",
+        "title": "details",
+        "element_type": "string",
+        "from": "1",
+        "to": "9",
+        "line": 3,
+        "symbol": 0
+      },
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "details",
+            "title": "v",
+            "line": 5
+          }
+        ],
+        "line": 5,
+        "symbol": 0
+      },
+      {
+        "id": "Assign",
+        "to": {
+          "id": "ArrayElement",
+          "array": "v",
+          "index": {
+            "id": "FunctionCall",
+            "function_name": "position",
+            "parameters": [],
+            "line": 7,
+            "symbol": 0,
+            "type": ""
+          },
+          "line": 7,
+          "symbol": 0,
+          "type": "string"
+        },
+        "from": {
+          "id": "Value",
+          "type": "string",
+          "value": "The new name for the school",
+          "line": 7,
+          "symbol": 0
+        },
+        "line": 7,
+        "symbol": 0
+      }
+    ],
+    "line": 7,
+    "symbol": 0
+  },
+  "error_list": [
+    {
+      "type": "UNDEFINED_FUNCTION",
+      "line": 7,
+      "elements": {
+        "id": "position"
+      },
+      "text": "Undefined function position"
+    },
+    {
+      "type": "ARRAY_INDEX_TYPE",
+      "line": 7,
+      "elements": {
+        "array": "v",
+        "index": ""
+      },
+      "text": "Array (v) index must be integer or symbol"
+    }
+  ]
+}

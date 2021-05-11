@@ -1,0 +1,32 @@
+{
+  "symbol_table": [
+    {
+      "variables": {},
+      "functions": {},
+      "types": {},
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Expression",
+        "op": "!",
+        "left": {},
+        "right": {
+          "id": "Value",
+          "type": "integer",
+          "value": 90,
+          "line": 3,
+          "symbol": 0
+        },
+        "line": 3,
+        "symbol": 0
+      }
+    ],
+    "line": 3,
+    "symbol": 0
+  },
+  "error_list": []
+}

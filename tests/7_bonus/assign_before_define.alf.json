@@ -1,0 +1,76 @@
+{
+  "symbol_table": [
+    {
+      "variables": {
+        "x": {
+          "type": "auto",
+          "value": {
+            "id": "Variable",
+            "title": "x",
+            "line": 3,
+            "symbol": 0,
+            "type": ""
+          },
+          "line": 3
+        },
+        "y": {
+          "type": "integer",
+          "line": 5
+        }
+      },
+      "functions": {},
+      "types": {},
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "auto",
+            "title": "x",
+            "value": {
+              "id": "Variable",
+              "title": "x",
+              "line": 3,
+              "symbol": 0,
+              "type": ""
+            },
+            "line": 3
+          }
+        ],
+        "line": 3,
+        "symbol": 0
+      },
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "integer",
+            "title": "y",
+            "line": 5
+          }
+        ],
+        "line": 5,
+        "symbol": 0
+      }
+    ],
+    "line": 5,
+    "symbol": 0
+  },
+  "error_list": [
+    {
+      "type": "UNDEFINED_VARIABLE",
+      "line": 3,
+      "elements": {
+        "variable": "x"
+      },
+      "text": "Undefined variable x"
+    }
+  ]
+}

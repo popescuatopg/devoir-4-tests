@@ -1,0 +1,77 @@
+{
+  "symbol_table": [
+    {
+      "variables": {
+        "a": {
+          "type": "integer",
+          "line": 3
+        }
+      },
+      "functions": {},
+      "types": {},
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "integer",
+            "title": "a",
+            "line": 3
+          }
+        ],
+        "line": 3,
+        "symbol": 0
+      },
+      {
+        "id": "Assign",
+        "to": {
+          "id": "Variable",
+          "title": "a",
+          "line": 5,
+          "symbol": 0,
+          "type": "integer"
+        },
+        "from": {
+          "id": "Value",
+          "type": "integer",
+          "value": 190,
+          "line": 5,
+          "symbol": 0
+        },
+        "line": 5,
+        "symbol": 0
+      },
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "integer",
+            "title": "a",
+            "line": 7
+          }
+        ],
+        "line": 7,
+        "symbol": 0
+      }
+    ],
+    "line": 7,
+    "symbol": 0
+  },
+  "error_list": [
+    {
+      "type": "VARIABLE_ALREADY_DEFINED",
+      "line": 7,
+      "elements": {
+        "variable": "a"
+      },
+      "text": "variable a is already defined"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+   "id": "Statements",
+   "statements": [
+       {
+           "id": "Expression",
+           "op": "+",
+           "left": {
+               "id": "Expression",
+               "op": "+",
+               "left": {
+                   "id": "Value",
+                   "type": "integer",
+                   "value": 2,
+                   "line": 3
+               },
+               "right": {
+                   "id": "Value",
+                   "type": "float",
+                   "value": 3.5,
+                   "line": 3
+               },
+               "line": 3
+           },
+           "right": {
+               "id": "Value",
+               "type": "symbol",
+               "value": "e",
+               "line": 3
+           },
+           "line": 3
+       }
+   ],
+   "line": 3
+}

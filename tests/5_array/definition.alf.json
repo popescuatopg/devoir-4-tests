@@ -1,0 +1,35 @@
+{
+  "symbol_table": [
+    {
+      "variables": {},
+      "functions": {},
+      "types": {
+        "info": {
+          "type": "array",
+          "line": 3,
+          "element_type": "string",
+          "from": "1",
+          "to": "9"
+        }
+      },
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Array",
+        "title": "info",
+        "element_type": "string",
+        "from": "1",
+        "to": "9",
+        "line": 3,
+        "symbol": 0
+      }
+    ],
+    "line": 3,
+    "symbol": 0
+  },
+  "error_list": []
+}

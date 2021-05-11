@@ -1,0 +1,18 @@
+{
+   "id": "Statements",
+   "statements": [
+       {
+           "id": "Expression",
+           "op": "!",
+           "left": {},
+           "right": {
+               "id": "Value",
+               "type": "integer",
+               "value": 90,
+               "line": 3
+           },
+           "line": 3
+       }
+   ],
+   "line": 3
+}

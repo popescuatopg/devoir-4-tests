@@ -1,0 +1,32 @@
+{
+   "id": "Statements",
+   "statements": [
+       {
+           "id": "ClassDefinition",
+           "title": "s",
+           "properties": [
+               {
+                   "id": "LocalProperty",
+                   "type": "string",
+                   "title": "title",
+                   "line": 4
+               }
+           ],
+           "line": 5
+       },
+       {
+           "id": "ClassDefinition",
+           "title": "s",
+           "properties": [
+               {
+                   "id": "LocalProperty",
+                   "type": "string",
+                   "title": "title",
+                   "line": 8
+               }
+           ],
+           "line": 9
+       }
+   ],
+   "line": 9
+}

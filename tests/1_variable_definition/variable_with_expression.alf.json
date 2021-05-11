@@ -1,0 +1,106 @@
+{
+  "symbol_table": [
+    {
+      "variables": {
+        "e": {
+          "type": "integer",
+          "value": {
+            "id": "Expression",
+            "op": "+",
+            "left": {
+              "id": "Value",
+              "type": "integer",
+              "value": 20,
+              "line": 2,
+              "symbol": 0
+            },
+            "right": {
+              "id": "Expression",
+              "op": "*",
+              "left": {
+                "id": "Value",
+                "type": "integer",
+                "value": 3,
+                "line": 2,
+                "symbol": 0
+              },
+              "right": {
+                "id": "Value",
+                "type": "integer",
+                "value": 5,
+                "line": 2,
+                "symbol": 0
+              },
+              "line": 2,
+              "symbol": 0,
+              "type": "integer"
+            },
+            "line": 2,
+            "symbol": 0,
+            "type": "integer"
+          },
+          "line": 2
+        }
+      },
+      "functions": {},
+      "types": {},
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "integer",
+            "title": "e",
+            "value": {
+              "id": "Expression",
+              "op": "+",
+              "left": {
+                "id": "Value",
+                "type": "integer",
+                "value": 20,
+                "line": 2,
+                "symbol": 0
+              },
+              "right": {
+                "id": "Expression",
+                "op": "*",
+                "left": {
+                  "id": "Value",
+                  "type": "integer",
+                  "value": 3,
+                  "line": 2,
+                  "symbol": 0
+                },
+                "right": {
+                  "id": "Value",
+                  "type": "integer",
+                  "value": 5,
+                  "line": 2,
+                  "symbol": 0
+                },
+                "line": 2,
+                "symbol": 0,
+                "type": "integer"
+              },
+              "line": 2,
+              "symbol": 0,
+              "type": "integer"
+            },
+            "line": 2
+          }
+        ],
+        "line": 2,
+        "symbol": 0
+      }
+    ],
+    "line": 2,
+    "symbol": 0
+  },
+  "error_list": []
+}

@@ -1,0 +1,9 @@
+/* Type redefinition */
+
+class s 
+	local string title;
+end;
+
+class s 
+	local strinf title;
+end;

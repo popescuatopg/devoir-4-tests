@@ -1,0 +1,89 @@
+{
+  "symbol_table": [
+    {
+      "variables": {
+        "l": {
+          "type": "a",
+          "line": 5
+        }
+      },
+      "functions": {},
+      "types": {
+        "a": {
+          "type": "array",
+          "line": 3,
+          "element_type": "string",
+          "from": "1",
+          "to": "9"
+        }
+      },
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Array",
+        "title": "a",
+        "element_type": "string",
+        "from": "1",
+        "to": "9",
+        "line": 3,
+        "symbol": 0
+      },
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "a",
+            "title": "l",
+            "line": 5
+          }
+        ],
+        "line": 5,
+        "symbol": 0
+      },
+      {
+        "id": "Assign",
+        "to": {
+          "id": "ArrayElement",
+          "array": "l",
+          "index": {
+            "id": "Value",
+            "type": "string",
+            "value": "text",
+            "line": 7,
+            "symbol": 0
+          },
+          "line": 7,
+          "symbol": 0,
+          "type": "string"
+        },
+        "from": {
+          "id": "Value",
+          "type": "string",
+          "value": "text",
+          "line": 7,
+          "symbol": 0
+        },
+        "line": 7,
+        "symbol": 0
+      }
+    ],
+    "line": 7,
+    "symbol": 0
+  },
+  "error_list": [
+    {
+      "type": "ARRAY_INDEX_TYPE",
+      "line": 7,
+      "elements": {
+        "array": "l",
+        "index": "string"
+      },
+      "text": "Array (l) index must be integer or symbol"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+/* Expression with variable */
+
+declare integer n;
+n = 3;
+n+4+" text";

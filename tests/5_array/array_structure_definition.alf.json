@@ -1,0 +1,102 @@
+{
+  "symbol_table": [
+    {
+      "variables": {
+        "school_array": {
+          "type": "list_of_schools",
+          "line": 11
+        }
+      },
+      "functions": {},
+      "types": {
+        "school": {
+          "type": "struct",
+          "properties": [
+            {
+              "id": "LocalProperty",
+              "type": "string",
+              "title": "name",
+              "line": 4
+            },
+            {
+              "id": "LocalProperty",
+              "type": "boolean",
+              "title": "private",
+              "line": 5
+            },
+            {
+              "id": "LocalProperty",
+              "type": "integer",
+              "title": "type",
+              "line": 6
+            }
+          ]
+        },
+        "school_array": {
+          "type": "array",
+          "line": 9,
+          "element_type": "school",
+          "from": "1",
+          "to": "9"
+        }
+      },
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "ClassDefinition",
+        "title": "school",
+        "properties": [
+          {
+            "id": "LocalProperty",
+            "type": "string",
+            "title": "name",
+            "line": 4
+          },
+          {
+            "id": "LocalProperty",
+            "type": "boolean",
+            "title": "private",
+            "line": 5
+          },
+          {
+            "id": "LocalProperty",
+            "type": "integer",
+            "title": "type",
+            "line": 6
+          }
+        ],
+        "line": 7,
+        "symbol": 0
+      },
+      {
+        "id": "Array",
+        "title": "school_array",
+        "element_type": "school",
+        "from": "1",
+        "to": "9",
+        "line": 9,
+        "symbol": 0
+      },
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "list_of_schools",
+            "title": "school_array",
+            "line": 11
+          }
+        ],
+        "line": 11,
+        "symbol": 0
+      }
+    ],
+    "line": 11,
+    "symbol": 0
+  },
+  "error_list": []
+}

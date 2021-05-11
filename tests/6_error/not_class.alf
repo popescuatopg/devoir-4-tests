@@ -1,0 +1,5 @@
+/* Not a class */
+
+declare string v;
+
+v.t = "some text";

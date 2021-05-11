@@ -1,0 +1,4 @@
+/* Call function without parameters */
+function _getpid:integer => 120;
+
+exec _getpid();

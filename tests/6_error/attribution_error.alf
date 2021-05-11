@@ -1,0 +1,6 @@
+/* Attribution error */
+
+declare integer a;
+declare string s;
+
+a = s;

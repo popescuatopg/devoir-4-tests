@@ -1,0 +1,55 @@
+{
+  "symbol_table": [
+    {
+      "variables": {
+        "n": {
+          "type": "integer",
+          "line": 3
+        }
+      },
+      "functions": {},
+      "types": {},
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "integer",
+            "title": "n",
+            "line": 3
+          }
+        ],
+        "line": 3,
+        "symbol": 0
+      },
+      {
+        "id": "Assign",
+        "to": {
+          "id": "Variable",
+          "title": "n",
+          "line": 5,
+          "symbol": 0,
+          "type": "integer"
+        },
+        "from": {
+          "id": "Value",
+          "type": "integer",
+          "value": 6,
+          "line": 5,
+          "symbol": 0
+        },
+        "line": 5,
+        "symbol": 0
+      }
+    ],
+    "line": 5,
+    "symbol": 0
+  },
+  "error_list": []
+}

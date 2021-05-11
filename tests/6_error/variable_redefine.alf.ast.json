@@ -1,0 +1,45 @@
+{
+   "id": "Statements",
+   "statements": [
+       {
+           "id": "Declaration",
+           "elements": [
+               {
+                   "id": "DeclarationElement",
+                   "type": "integer",
+                   "title": "a",
+                   "line": 3
+               }
+           ],
+           "line": 3
+       },
+       {
+           "id": "Assign",
+           "to": {
+               "id": "Variable",
+               "title": "a",
+               "line": 5
+           },
+           "from": {
+               "id": "Value",
+               "type": "integer",
+               "value": 190,
+               "line": 5
+           },
+           "line": 5
+       },
+       {
+           "id": "Declaration",
+           "elements": [
+               {
+                   "id": "DeclarationElement",
+                   "type": "integer",
+                   "title": "a",
+                   "line": 7
+               }
+           ],
+           "line": 7
+       }
+   ],
+   "line": 7
+}

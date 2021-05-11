@@ -1,0 +1,77 @@
+{
+  "symbol_table": [
+    {
+      "variables": {},
+      "functions": {
+        "print": {
+          "type": "string",
+          "parameters": [
+            {
+              "id": "FunctionDefinitionParameter",
+              "type": "string",
+              "name": "text",
+              "symbol": 1
+            }
+          ],
+          "line": 6,
+          "symbol": 1
+        }
+      },
+      "types": {},
+      "type": "Statements"
+    },
+    {
+      "variables": {},
+      "functions": {},
+      "types": {},
+      "parent": 0,
+      "type": "function",
+      "function": "print",
+      "return_type": "string"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "FunctionDefinition",
+        "title": "print",
+        "parameters": [
+          {
+            "id": "FunctionDefinitionParameter",
+            "type": "string",
+            "name": "text",
+            "symbol": 1
+          }
+        ],
+        "return_type": "string",
+        "statements": [
+          {
+            "id": "Assign",
+            "to": {
+              "id": "Variable",
+              "title": "text",
+              "line": 5,
+              "symbol": 1,
+              "type": "string"
+            },
+            "from": {
+              "id": "Value",
+              "type": "string",
+              "value": "",
+              "line": 5,
+              "symbol": 1
+            },
+            "line": 5,
+            "symbol": 1
+          }
+        ],
+        "line": 6,
+        "symbol": 1
+      }
+    ],
+    "line": 6,
+    "symbol": 0
+  },
+  "error_list": []
+}

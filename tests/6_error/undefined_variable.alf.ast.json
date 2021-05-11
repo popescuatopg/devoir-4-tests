@@ -1,0 +1,22 @@
+{
+   "id": "Statements",
+   "statements": [
+       {
+           "id": "Expression",
+           "op": "+",
+           "left": {
+                "id": "Variable",
+                "title": "i",
+                "line": 3
+           },
+           "right": {
+               "id": "Value",
+               "type": "integer",
+               "value": 7,
+               "line": 3
+           },
+           "line": 3
+       }
+   ],
+   "line": 3
+}

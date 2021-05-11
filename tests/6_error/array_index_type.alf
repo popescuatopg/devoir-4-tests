@@ -1,0 +1,7 @@
+/* Array index value error */
+
+string array a [1 : 9];
+
+declare a l;
+
+l["text"] = "text";

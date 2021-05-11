@@ -1,0 +1,12 @@
+/* Type from function */
+
+declare v = exec power (a=6, n=6);
+
+function power (declare a=0.0, declare n=0 ):float
+begin
+	declare p = 1;
+	for i from 1 to n start 
+		p = p * a;
+	finish;
+	return p;
+end;

@@ -1,0 +1,35 @@
+{
+    "id": "Statements",
+    "statements": [
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "auto",
+                    "title": "x",
+                    "value": {
+                        "id": "Variable",
+                        "title": "x",
+                        "line": 3
+                    },
+                    "line": 3
+                }
+            ],
+            "line": 3
+        },
+        {
+            "id": "Declaration",
+            "elements": [
+                {
+                    "id": "DeclarationElement",
+                    "type": "integer",
+                    "title": "y",
+                    "line": 5
+                }
+            ],
+            "line": 5
+        }
+    ],
+    "line": 5
+ }

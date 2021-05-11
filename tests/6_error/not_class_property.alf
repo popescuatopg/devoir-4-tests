@@ -1,0 +1,9 @@
+/* Not a class property */
+
+class s 
+	local string title;
+end;
+
+declare s v;
+
+v[t] = "some text";

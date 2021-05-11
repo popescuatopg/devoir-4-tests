@@ -1,0 +1,14 @@
+{
+   "id": "Statements",
+   "statements": [
+       {
+           "id": "Array",
+           "title": "a",
+           "element_type": "string",
+           "from": "90",
+           "to": "45",
+           "line": 3
+       }
+   ],
+   "line": 3
+}

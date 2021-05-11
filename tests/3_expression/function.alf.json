@@ -1,0 +1,73 @@
+{
+  "symbol_table": [
+    {
+      "variables": {},
+      "functions": {
+        "number": {
+          "type": "integer",
+          "parameters": [],
+          "line": 3,
+          "symbol": 1
+        }
+      },
+      "types": {},
+      "type": "Statements"
+    },
+    {
+      "variables": {},
+      "functions": {},
+      "types": {},
+      "parent": 0,
+      "type": "function",
+      "function": "number",
+      "return_type": "integer"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "FunctionDefinition",
+        "title": "number",
+        "parameters": [],
+        "return_type": "integer",
+        "statements": [
+          {
+            "id": "Value",
+            "type": "integer",
+            "value": 3,
+            "line": 3,
+            "symbol": 1
+          }
+        ],
+        "line": 3,
+        "symbol": 1
+      },
+      {
+        "id": "Expression",
+        "op": "+",
+        "left": {
+          "id": "Value",
+          "type": "integer",
+          "value": 2,
+          "line": 5,
+          "symbol": 0
+        },
+        "right": {
+          "id": "FunctionCall",
+          "function_name": "number",
+          "parameters": [],
+          "line": 5,
+          "symbol": 0,
+          "type": "integer"
+        },
+        "line": 5,
+        "symbol": 0,
+        "type": "integer"
+      }
+    ],
+    "line": 5,
+    "symbol": 0
+  },
+  "error_list": []
+}

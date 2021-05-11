@@ -1,0 +1,66 @@
+{
+  "symbol_table": [
+    {
+      "variables": {},
+      "functions": {},
+      "types": {
+        "s": {
+          "type": "struct",
+          "properties": [
+            {
+              "id": "LocalProperty",
+              "type": "string",
+              "title": "title",
+              "line": 4
+            }
+          ]
+        }
+      },
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "ClassDefinition",
+        "title": "s",
+        "properties": [
+          {
+            "id": "LocalProperty",
+            "type": "string",
+            "title": "title",
+            "line": 4
+          }
+        ],
+        "line": 5,
+        "symbol": 0
+      },
+      {
+        "id": "ClassDefinition",
+        "title": "s",
+        "properties": [
+          {
+            "id": "LocalProperty",
+            "type": "string",
+            "title": "title",
+            "line": 8
+          }
+        ],
+        "line": 9,
+        "symbol": 0
+      }
+    ],
+    "line": 9,
+    "symbol": 0
+  },
+  "error_list": [
+    {
+      "type": "TYPE_ALREADY_DEFINED",
+      "elements": {
+        "type": "s"
+      },
+      "text": "type s is already defined"
+    }
+  ]
+}

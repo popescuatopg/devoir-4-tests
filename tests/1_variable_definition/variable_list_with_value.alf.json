@@ -1,0 +1,122 @@
+{
+  "symbol_table": [
+    {
+      "variables": {
+        "n": {
+          "type": "integer",
+          "value": {
+            "id": "Value",
+            "type": "integer",
+            "value": 3,
+            "line": 2,
+            "symbol": 0
+          },
+          "line": 2
+        },
+        "r": {
+          "type": "float",
+          "value": {
+            "id": "Value",
+            "type": "float",
+            "value": 3.7,
+            "line": 2,
+            "symbol": 0
+          },
+          "line": 2
+        },
+        "l": {
+          "type": "boolean",
+          "value": {
+            "id": "Value",
+            "type": "boolean",
+            "value": false,
+            "line": 2,
+            "symbol": 0
+          },
+          "line": 2
+        },
+        "s": {
+          "type": "string",
+          "value": {
+            "id": "Value",
+            "type": "string",
+            "value": "string",
+            "line": 2,
+            "symbol": 0
+          },
+          "line": 2
+        }
+      },
+      "functions": {},
+      "types": {},
+      "type": "Statements"
+    }
+  ],
+  "ast": {
+    "id": "Statements",
+    "statements": [
+      {
+        "id": "Declaration",
+        "elements": [
+          {
+            "id": "DeclarationElement",
+            "type": "integer",
+            "title": "n",
+            "value": {
+              "id": "Value",
+              "type": "integer",
+              "value": 3,
+              "line": 2,
+              "symbol": 0
+            },
+            "line": 2
+          },
+          {
+            "id": "DeclarationElement",
+            "type": "float",
+            "title": "r",
+            "value": {
+              "id": "Value",
+              "type": "float",
+              "value": 3.7,
+              "line": 2,
+              "symbol": 0
+            },
+            "line": 2
+          },
+          {
+            "id": "DeclarationElement",
+            "type": "boolean",
+            "title": "l",
+            "value": {
+              "id": "Value",
+              "type": "boolean",
+              "value": false,
+              "line": 2,
+              "symbol": 0
+            },
+            "line": 2
+          },
+          {
+            "id": "DeclarationElement",
+            "type": "string",
+            "title": "s",
+            "value": {
+              "id": "Value",
+              "type": "string",
+              "value": "string",
+              "line": 2,
+              "symbol": 0
+            },
+            "line": 2
+          }
+        ],
+        "line": 2,
+        "symbol": 0
+      }
+    ],
+    "line": 2,
+    "symbol": 0
+  },
+  "error_list": []
+}
