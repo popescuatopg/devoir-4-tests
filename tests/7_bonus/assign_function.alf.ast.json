@@ -45,10 +45,14 @@
             "title": "power",
             "parameters": [
                 {
-                    "id": "FunctionDefinitionParameter"
+                    "id": "FunctionDefinitionParameter",
+                    "type": "float",
+                    "name": "a"
                 },
                 {
-                    "id": "FunctionDefinitionParameter"
+                    "id": "FunctionDefinitionParameter",
+                    "type": "integer",
+                    "name": "n"
                 }
             ],
             "return_type": "float",
@@ -97,12 +101,14 @@
                                 "id": "Expression",
                                 "op": "*",
                                 "left": {
-                                    "id": "Value",
+                                    "id": "Variable",
+                                    "title": "p",
                                     "line": 9
                                 },
                                 "right": {
-                                    "id": "Value",
-                                    "line": 9
+                                     "id": "Variable",
+                                     "title": "a",
+                                     "line": 9
                                 },
                                 "line": 9
                             },
@@ -114,7 +120,8 @@
                 {
                     "id": "ReturnFunction",
                     "value": {
-                        "id": "Value",
+                        "id": "Variable",
+                        "title": "p",
                         "line": 11
                     },
                     "line": 11

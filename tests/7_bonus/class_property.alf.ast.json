@@ -13,7 +13,7 @@
                },
                {
                    "id": "LocalProperty",
-                   "type": "bool",
+                   "type": "boolean",
                    "title": "private",
                    "line": 5
                },

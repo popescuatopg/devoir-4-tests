@@ -1,12 +1,7 @@
 {
   "symbol_table": [
     {
-      "variables": {
-        "list_of_schools": {
-          "type": "school_array",
-          "line": 11
-        }
-      },
+      "variables": {},
       "functions": {},
       "types": {
         "school": {
@@ -82,37 +77,24 @@
         "symbol": 0
       },
       {
-        "id": "Declaration",
-        "elements": [
-          {
-            "id": "DeclarationElement",
-            "type": "school_array",
-            "title": "list_of_schools",
-            "line": 11
-          }
-        ],
-        "line": 11,
-        "symbol": 0
-      },
-      {
         "id": "Assign",
         "to": {
           "id": "ClassProperty",
           "object": {
             "id": "ArrayElement",
-            "array": "list_of_schools",
+            "array": "school_array",
             "index": {
               "id": "Value",
               "type": "integer",
               "value": 1,
-              "line": 13,
+              "line": 12,
               "symbol": 0
             },
-            "line": 13,
+            "line": 12,
             "symbol": 0
           },
           "title": "name",
-          "line": 13,
+          "line": 12,
           "symbol": 0,
           "type": "string"
         },
@@ -120,24 +102,15 @@
           "id": "Value",
           "type": "string",
           "value": "School",
-          "line": 13,
+          "line": 12,
           "symbol": 0
         },
-        "line": 13,
+        "line": 12,
         "symbol": 0
       }
     ],
-    "line": 13,
+    "line": 12,
     "symbol": 0
   },
-  "error_list": [
-    {
-      "type": "NOT_STRUCT",
-      "line": 13,
-      "elements": {
-        "type": "list_of_schools"
-      },
-      "text": "list_of_schools is not a struct"
-    }
-  ]
+  "error_list": []
 }

@@ -63,9 +63,9 @@
       "type": "NOT_STRUCT",
       "line": 5,
       "elements": {
-        "type": "string"
+        "type": "v"
       },
-      "text": "string is not a struct"
+      "text": "v is not a struct"
     },
     {
       "type": "TYPE_EXPRESSION",

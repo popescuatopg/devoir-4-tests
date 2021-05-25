@@ -54,9 +54,11 @@
           "id": "Expression",
           "op": "+",
           "left": {
-            "id": "Value",
+            "id": "Variable",
+            "title": "n",
             "line": 5,
-            "symbol": 0
+            "symbol": 0,
+            "type": "integer"
           },
           "right": {
             "id": "Value",
@@ -66,7 +68,8 @@
             "symbol": 0
           },
           "line": 5,
-          "symbol": 0
+          "symbol": 0,
+          "type": "integer"
         },
         "right": {
           "id": "Value",

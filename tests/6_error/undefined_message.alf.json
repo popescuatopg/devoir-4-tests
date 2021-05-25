@@ -21,7 +21,8 @@
               "id": "Value",
               "type": "string",
               "value": "text to write",
-              "line": 2
+              "line": 2,
+              "symbol": 0
             }
           }
         ],

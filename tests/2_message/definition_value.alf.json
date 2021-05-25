@@ -2,27 +2,84 @@
   "symbol_table": [
     {
       "variables": {},
-      "functions": {},
+      "functions": {
+        "sum": {
+          "type": "integer",
+          "parameters": [
+            {
+              "id": "FunctionDefinitionParameter",
+              "type": "integer",
+              "name": "n1",
+              "symbol": 1
+            },
+            {
+              "id": "FunctionDefinitionParameter",
+              "type": "integer",
+              "name": "n2",
+              "symbol": 1
+            }
+          ],
+          "line": 8,
+          "symbol": 1
+        }
+      },
       "types": {},
       "type": "Statements"
+    },
+    {
+      "variables": {
+        "s": {
+          "type": "integer",
+          "value": {
+            "id": "Expression",
+            "op": "+",
+            "left": {
+              "id": "Variable",
+              "title": "n1",
+              "line": 6,
+              "symbol": 1,
+              "type": "integer"
+            },
+            "right": {
+              "id": "Variable",
+              "title": "n2",
+              "line": 6,
+              "symbol": 1,
+              "type": "integer"
+            },
+            "line": 6,
+            "symbol": 1,
+            "type": "integer"
+          },
+          "line": 6
+        }
+      },
+      "functions": {},
+      "types": {},
+      "parent": 0,
+      "type": "function",
+      "function": "sum",
+      "return_type": "integer"
     }
   ],
   "ast": {
     "id": "Statements",
     "statements": [
       {
-        "id": "FunctionDeclaration",
-        "title": "$sum",
+        "id": "FunctionDefinition",
+        "title": "sum",
         "parameters": [
           {
             "id": "FunctionDefinitionParameter",
             "type": "integer",
-            "name": "n1"
+            "name": "n1",
+            "symbol": 1
           },
           {
             "id": "FunctionDefinitionParameter",
             "type": "integer",
-            "name": "n2"
+            "name": "n2",
+            "symbol": 1
           }
         ],
         "return_type": "integer",
@@ -40,19 +97,26 @@
                   "left": {
                     "id": "Variable",
                     "title": "n1",
-                    "line": 6
+                    "line": 6,
+                    "symbol": 1,
+                    "type": "integer"
                   },
                   "right": {
                     "id": "Variable",
                     "title": "n2",
-                    "line": 6
+                    "line": 6,
+                    "symbol": 1,
+                    "type": "integer"
                   },
-                  "line": 6
+                  "line": 6,
+                  "symbol": 1,
+                  "type": "integer"
                 },
                 "line": 6
               }
             ],
-            "line": 6
+            "line": 6,
+            "symbol": 1
           }
         ],
         "return_function": {
@@ -64,7 +128,8 @@
           },
           "line": 7
         },
-        "line": 8
+        "line": 8,
+        "symbol": 1
       }
     ],
     "line": 8,

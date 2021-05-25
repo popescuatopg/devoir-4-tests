@@ -2,8 +2,8 @@
    "id": "Statements",
    "statements": [
      {
-       "id": "FunctionDeclaration",
-       "title": "$sum",
+       "id": "FunctionDefinition",
+       "title": "sum",
        "parameters": [
          {
            "id": "FunctionDefinitionParameter",

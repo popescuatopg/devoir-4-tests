@@ -60,7 +60,8 @@
               "id": "Value",
               "type": "string",
               "value": "text to write",
-              "line": 4
+              "line": 4,
+              "symbol": 0
             }
           }
         ],

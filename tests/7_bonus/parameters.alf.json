@@ -29,7 +29,7 @@
     {
       "variables": {
         "p": {
-          "type": "auto",
+          "type": "integer",
           "value": {
             "id": "Value",
             "type": "integer",
@@ -75,7 +75,7 @@
             "elements": [
               {
                 "id": "DeclarationElement",
-                "type": "auto",
+                "type": "integer",
                 "title": "p",
                 "value": {
                   "id": "Value",
@@ -97,12 +97,15 @@
               "id": "Value",
               "type": "integer",
               "value": 1,
-              "line": 6
+              "line": 6,
+              "symbol": 1
             },
             "to": {
               "id": "Variable",
               "title": "n",
-              "line": 6
+              "line": 6,
+              "symbol": 1,
+              "type": "integer"
             },
             "statements": [
               {
@@ -110,35 +113,50 @@
                 "to": {
                   "id": "Variable",
                   "title": "p",
-                  "line": 7
+                  "line": 7,
+                  "symbol": 1,
+                  "type": "integer"
                 },
                 "from": {
                   "id": "Expression",
                   "op": "*",
                   "left": {
-                    "id": "Value",
-                    "line": 7
+                    "id": "Variable",
+                    "title": "p",
+                    "line": 7,
+                    "symbol": 1,
+                    "type": "integer"
                   },
                   "right": {
-                    "id": "Value",
-                    "line": 7
+                    "id": "Variable",
+                    "title": "a",
+                    "line": 7,
+                    "symbol": 1,
+                    "type": "float"
                   },
-                  "line": 7
+                  "line": 7,
+                  "symbol": 1,
+                  "type": "float"
                 },
-                "line": 7
+                "line": 7,
+                "symbol": 1
               }
             ],
-            "line": 8
+            "line": 8,
+            "symbol": 1
           },
           {
             "id": "ReturnFunction",
             "value": {
-              "id": "Value",
+              "id": "Variable",
+              "title": "p",
               "line": 9,
-              "symbol": 1
+              "symbol": 1,
+              "type": "integer"
             },
             "line": 9,
-            "symbol": 1
+            "symbol": 1,
+            "type": "integer"
           }
         ],
         "line": 10,
@@ -155,7 +173,8 @@
               "id": "Value",
               "type": "integer",
               "value": 6,
-              "line": 12
+              "line": 12,
+              "symbol": 0
             }
           },
           {
@@ -165,7 +184,8 @@
               "id": "Value",
               "type": "integer",
               "value": 6,
-              "line": 12
+              "line": 12,
+              "symbol": 0
             }
           }
         ],
@@ -177,5 +197,16 @@
     "line": 12,
     "symbol": 0
   },
-  "error_list": []
+  "error_list": [
+    {
+      "type": "TYPE_EXPRESSION",
+      "line": 7,
+      "elements": {
+        "op": "=",
+        "to": "integer",
+        "from": "float"
+      },
+      "text": "Type expression error integer is float"
+    }
+  ]
 }

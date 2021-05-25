@@ -8,6 +8,5 @@ end;
 
 school array school_array[1:9];
 
-declare school_array list_of_schools;
 
-list_of_schools[1].name = "School";
+school_array[1].name = "School";

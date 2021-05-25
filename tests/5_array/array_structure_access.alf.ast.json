@@ -35,43 +35,31 @@
             "line": 9
         },
         {
-            "id": "Declaration",
-            "elements": [
-                {
-                    "id": "DeclarationElement",
-                    "type": "school_array",
-                    "title": "list_of_schools",
-                    "line": 11
-                }
-            ],
-            "line": 11
-        },
-        {
             "id": "Assign",
             "to": {
                 "id": "ClassProperty",
                 "object": {
                     "id": "ArrayElement",
-                    "array": "list_of_schools",
+                    "array": "school_array",
                     "index": {
                         "id": "Value",
                         "type": "integer",
                         "value": 1,
-                        "line": 13
+                        "line": 12
                     },
-                    "line": 13
+                    "line": 12
                 },
                 "title": "name",
-                "line": 13
+                "line": 12
             },
             "from": {
                 "id": "Value",
                 "type": "string",
                 "value": "School",
-                "line": 13
+                "line": 12
             },
-            "line": 13
+            "line": 12
         }
     ],
-    "line": 13
+    "line": 12
 }

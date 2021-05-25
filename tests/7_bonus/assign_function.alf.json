@@ -15,7 +15,8 @@
                   "id": "Value",
                   "type": "integer",
                   "value": 6,
-                  "line": 3
+                  "line": 3,
+                  "symbol": 0
                 }
               },
               {
@@ -25,7 +26,8 @@
                   "id": "Value",
                   "type": "integer",
                   "value": 6,
-                  "line": 3
+                  "line": 3,
+                  "symbol": 0
                 }
               }
             ],
@@ -42,10 +44,14 @@
           "parameters": [
             {
               "id": "FunctionDefinitionParameter",
+              "type": "float",
+              "name": "a",
               "symbol": 1
             },
             {
               "id": "FunctionDefinitionParameter",
+              "type": "integer",
+              "name": "n",
               "symbol": 1
             }
           ],
@@ -99,7 +105,8 @@
                     "id": "Value",
                     "type": "integer",
                     "value": 6,
-                    "line": 3
+                    "line": 3,
+                    "symbol": 0
                   }
                 },
                 {
@@ -109,7 +116,8 @@
                     "id": "Value",
                     "type": "integer",
                     "value": 6,
-                    "line": 3
+                    "line": 3,
+                    "symbol": 0
                   }
                 }
               ],
@@ -129,10 +137,14 @@
         "parameters": [
           {
             "id": "FunctionDefinitionParameter",
+            "type": "float",
+            "name": "a",
             "symbol": 1
           },
           {
             "id": "FunctionDefinitionParameter",
+            "type": "integer",
+            "name": "n",
             "symbol": 1
           }
         ],
@@ -165,12 +177,15 @@
               "id": "Value",
               "type": "integer",
               "value": 1,
-              "line": 8
+              "line": 8,
+              "symbol": 1
             },
             "to": {
               "id": "Variable",
               "title": "n",
-              "line": 8
+              "line": 8,
+              "symbol": 1,
+              "type": "integer"
             },
             "statements": [
               {
@@ -178,30 +193,41 @@
                 "to": {
                   "id": "Variable",
                   "title": "p",
-                  "line": 9
+                  "line": 9,
+                  "symbol": 1
                 },
                 "from": {
                   "id": "Expression",
                   "op": "*",
                   "left": {
-                    "id": "Value",
-                    "line": 9
+                    "id": "Variable",
+                    "title": "p",
+                    "line": 9,
+                    "symbol": 1,
+                    "type": "auto"
                   },
                   "right": {
-                    "id": "Value",
-                    "line": 9
+                    "id": "Variable",
+                    "title": "a",
+                    "line": 9,
+                    "symbol": 1,
+                    "type": "float"
                   },
-                  "line": 9
+                  "line": 9,
+                  "symbol": 1
                 },
-                "line": 9
+                "line": 9,
+                "symbol": 1
               }
             ],
-            "line": 10
+            "line": 10,
+            "symbol": 1
           },
           {
             "id": "ReturnFunction",
             "value": {
-              "id": "Value",
+              "id": "Variable",
+              "title": "p",
               "line": 11,
               "symbol": 1
             },

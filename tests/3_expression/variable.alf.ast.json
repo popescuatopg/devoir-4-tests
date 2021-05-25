@@ -35,7 +35,8 @@
                "id": "Expression",
                "op": "+",
                "left": {
-                   "id": "Value",
+                   "id": "Variable",
+                   "title": "n",
                    "line": 5
                },
                "right": {

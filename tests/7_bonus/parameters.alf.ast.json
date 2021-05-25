@@ -23,7 +23,7 @@
                    "elements": [
                        {
                            "id": "DeclarationElement",
-                           "type": "auto",
+                           "type": "integer",
                            "title": "p",
                            "value": {
                                "id": "Value",
@@ -62,12 +62,14 @@
                                "id": "Expression",
                                "op": "*",
                                "left": {
-                                   "id": "Value",
+                                   "id": "Variable",
+                                   "title": "p",
                                    "line": 7
                                },
                                "right": {
-                                   "id": "Value",
-                                   "line": 7
+                                    "id": "Variable",
+                                    "title": "a",
+                                    "line": 7
                                },
                                "line": 7
                            },
@@ -78,8 +80,9 @@
                },
                {
                    "id": "ReturnFunction",
-                   "value": {
-                       "id": "Value",
+                        "value": {
+                        "id": "Variable",
+                        "title": "p",
                        "line": 9
                    },
                    "line": 9
