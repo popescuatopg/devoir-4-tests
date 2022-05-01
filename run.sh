@@ -11,7 +11,7 @@ function run_test {
     outputname="$(dirname $filename)/$(basename $1 .alf).out"
     astoutputname="$(dirname $filename)/$(basename $1).ast.json"
     echo Running $filename
-    node $dir/../index.js $filename output.ast.json &> $outputname
+    node $dir/../index.js $filename.ast.json output.ast.json &> $outputname
     ERROR=0
 
     if node verify.js "$astoutputname" "output.ast.json" &> output.report;
