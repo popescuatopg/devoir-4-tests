@@ -35,7 +35,7 @@ then
     echo "Running all tests"
     for folder in $(cd $dir && find tests -mindepth 1 -maxdepth 1 -type d | sort)
     do
-        for file in $(cd $dir/$folder && find . -mindepth 1 -maxdepth 2 -type f -name '*.alf')
+        for file in $(cd $dir/$folder && find . -mindepth 1 -maxdepth 2 -type f -name '*.ast.json')
         do
             # echo file $(basename $folder)/$(basename $file)
             run_test $(basename $folder)/$(basename $file)
