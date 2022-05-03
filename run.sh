@@ -9,7 +9,7 @@ function run_test {
     # echo $filename
     
     outputname="$(dirname $filename)/$(basename $1 .alf).out"
-    astoutputname="$(dirname $filename)/$(basename $1).ast.json"
+    astoutputname="$(dirname $filename)/$(basename $1).json"
     echo Running $filename
     node $dir/../index.js $filename.ast.json output.ast.json &> $outputname
     ERROR=0
