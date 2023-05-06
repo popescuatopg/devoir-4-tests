@@ -1,81 +1,68 @@
 {
-  "symbol_table": [
-    {
-      "variables": {
-        "v": {
-          "type": "string",
-          "line": 3
-        }
-      },
-      "functions": {},
-      "types": {},
-      "type": "Statements"
-    }
-  ],
-  "ast": {
-    "id": "Statements",
-    "statements": [
-      {
-        "id": "Declaration",
-        "elements": [
-          {
-            "id": "DeclarationElement",
-            "type": "string",
-            "title": "v",
-            "line": 3
-          }
-        ],
-        "line": 3,
-        "symbol": 0
-      },
-      {
-        "id": "Assign",
-        "to": {
-          "id": "ClassProperty",
-          "object": {
-            "id": "Variable",
-            "title": "v",
-            "line": 5,
-            "symbol": 0,
-            "type": "string"
-          },
-          "title": "t",
-          "line": 5,
-          "symbol": 0,
-          "type": ""
-        },
-        "from": {
-          "id": "Value",
-          "type": "string",
-          "value": "some text",
-          "line": 5,
-          "symbol": 0
-        },
-        "line": 5,
-        "symbol": 0
-      }
-    ],
-    "line": 5,
-    "symbol": 0
-  },
-  "error_list": [
-    {
-      "type": "NOT_STRUCT",
-      "line": 5,
-      "elements": {
-        "type": "v"
-      },
-      "text": "v is not a struct"
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 3,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap",
+      "v" : "string"
     },
-    {
-      "type": "TYPE_EXPRESSION",
-      "line": 5,
-      "elements": {
-        "op": "=",
-        "to": "",
-        "from": "string"
-      },
-      "text": "Type expression error  is string"
+    "types" : {
+      "@class" : "java.util.HashMap",
+      "string" : {
+        "@class" : "org.easycompiler.type.Str",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : "string"
+      }
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
     }
-  ]
+  },
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 3,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Group",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 3,
+      "typeName" : null,
+      "nodes" : [ "java.util.ArrayList", [ ] ]
+    }, {
+      "@class" : "org.easycompiler.ast.Assignment",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 5,
+      "typeName" : null,
+      "to" : {
+        "@class" : "org.easycompiler.ast.StructElement",
+        "errors" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.semantic.SemanticError",
+          "type" : "UNDEFINED_STRUCT"
+        } ] ],
+        "line" : 5,
+        "typeName" : "string",
+        "struct" : {
+          "@class" : "org.easycompiler.ast.Identifier",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 5,
+          "typeName" : "string",
+          "title" : "v"
+        },
+        "property" : "t"
+      },
+      "from" : {
+        "@class" : "org.easycompiler.ast.Value",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 5,
+        "typeName" : "string",
+        "value" : "some text"
+      }
+    } ] ]
+  }
 }

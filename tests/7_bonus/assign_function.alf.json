@@ -1,255 +1,78 @@
 {
-  "symbol_table": [
-    {
-      "variables": {
-        "v": {
-          "type": "auto",
-          "value": {
-            "id": "FunctionCall",
-            "function_name": "power",
-            "parameters": [
-              {
-                "id": "FunctionCallParameter",
-                "name": "a",
-                "value": {
-                  "id": "Value",
-                  "type": "integer",
-                  "value": 6,
-                  "line": 3,
-                  "symbol": 0
-                }
-              },
-              {
-                "id": "FunctionCallParameter",
-                "name": "n",
-                "value": {
-                  "id": "Value",
-                  "type": "integer",
-                  "value": 6,
-                  "line": 3,
-                  "symbol": 0
-                }
-              }
-            ],
-            "line": 3,
-            "symbol": 0,
-            "type": ""
-          },
-          "line": 3
-        }
-      },
-      "functions": {
-        "power": {
-          "type": "float",
-          "parameters": [
-            {
-              "id": "FunctionDefinitionParameter",
-              "type": "float",
-              "name": "a",
-              "symbol": 1
-            },
-            {
-              "id": "FunctionDefinitionParameter",
-              "type": "integer",
-              "name": "n",
-              "symbol": 1
-            }
-          ],
-          "line": 12,
-          "symbol": 1
-        }
-      },
-      "types": {},
-      "type": "Statements"
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 3,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap"
     },
-    {
-      "variables": {
-        "p": {
-          "type": "auto",
-          "value": {
-            "id": "Value",
-            "type": "integer",
-            "value": 1,
-            "line": 7,
-            "symbol": 1
-          },
-          "line": 7
-        }
-      },
-      "functions": {},
-      "types": {},
-      "parent": 0,
-      "type": "function",
-      "function": "power",
-      "return_type": "float"
+    "types" : {
+      "@class" : "java.util.HashMap"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
     }
-  ],
-  "ast": {
-    "id": "Statements",
-    "statements": [
-      {
-        "id": "Declaration",
-        "elements": [
-          {
-            "id": "DeclarationElement",
-            "type": "auto",
-            "title": "v",
-            "value": {
-              "id": "FunctionCall",
-              "function_name": "power",
-              "parameters": [
-                {
-                  "id": "FunctionCallParameter",
-                  "name": "a",
-                  "value": {
-                    "id": "Value",
-                    "type": "integer",
-                    "value": 6,
-                    "line": 3,
-                    "symbol": 0
-                  }
-                },
-                {
-                  "id": "FunctionCallParameter",
-                  "name": "n",
-                  "value": {
-                    "id": "Value",
-                    "type": "integer",
-                    "value": 6,
-                    "line": 3,
-                    "symbol": 0
-                  }
-                }
-              ],
-              "line": 3,
-              "symbol": 0,
-              "type": ""
-            },
-            "line": 3
-          }
-        ],
-        "line": 3,
-        "symbol": 0
-      },
-      {
-        "id": "FunctionDefinition",
-        "title": "power",
-        "parameters": [
-          {
-            "id": "FunctionDefinitionParameter",
-            "type": "float",
-            "name": "a",
-            "symbol": 1
-          },
-          {
-            "id": "FunctionDefinitionParameter",
-            "type": "integer",
-            "name": "n",
-            "symbol": 1
-          }
-        ],
-        "return_type": "float",
-        "statements": [
-          {
-            "id": "Declaration",
-            "elements": [
-              {
-                "id": "DeclarationElement",
-                "type": "auto",
-                "title": "p",
-                "value": {
-                  "id": "Value",
-                  "type": "integer",
-                  "value": 1,
-                  "line": 7,
-                  "symbol": 1
-                },
-                "line": 7
-              }
-            ],
-            "line": 7,
-            "symbol": 1
-          },
-          {
-            "id": "ForLoop",
-            "variable": "i",
-            "from": {
-              "id": "Value",
-              "type": "integer",
-              "value": 1,
-              "line": 8,
-              "symbol": 1
-            },
-            "to": {
-              "id": "Variable",
-              "title": "n",
-              "line": 8,
-              "symbol": 1,
-              "type": "integer"
-            },
-            "statements": [
-              {
-                "id": "Assign",
-                "to": {
-                  "id": "Variable",
-                  "title": "p",
-                  "line": 9,
-                  "symbol": 1
-                },
-                "from": {
-                  "id": "Expression",
-                  "op": "*",
-                  "left": {
-                    "id": "Variable",
-                    "title": "p",
-                    "line": 9,
-                    "symbol": 1,
-                    "type": "auto"
-                  },
-                  "right": {
-                    "id": "Variable",
-                    "title": "a",
-                    "line": 9,
-                    "symbol": 1,
-                    "type": "float"
-                  },
-                  "line": 9,
-                  "symbol": 1
-                },
-                "line": 9,
-                "symbol": 1
-              }
-            ],
-            "line": 10,
-            "symbol": 1
-          },
-          {
-            "id": "ReturnFunction",
-            "value": {
-              "id": "Variable",
-              "title": "p",
-              "line": 11,
-              "symbol": 1
-            },
-            "line": 11,
-            "symbol": 1
-          }
-        ],
-        "line": 12,
-        "symbol": 1
-      }
-    ],
-    "line": 12,
-    "symbol": 0
   },
-  "error_list": [
-    {
-      "type": "UNDEFINED_FUNCTION",
-      "line": 3,
-      "elements": {
-        "id": "power"
-      },
-      "text": "Undefined function power"
-    }
-  ]
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 3,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Group",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 3,
+      "typeName" : null,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 3,
+        "typeName" : null,
+        "title" : "v",
+        "initial" : {
+          "@class" : "org.easycompiler.ast.FunctionCall",
+          "errors" : [ "java.util.ArrayList", [ {
+            "@class" : "org.easycompiler.semantic.SemanticError",
+            "type" : "UNDEFINED_FUNCTION"
+          }, {
+            "@class" : "org.easycompiler.semantic.SemanticError",
+            "type" : "UNDEFINED_FUNCTION"
+          } ] ],
+          "line" : 3,
+          "typeName" : null,
+          "function_name" : {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "errors" : [ "java.util.ArrayList", [ {
+              "@class" : "org.easycompiler.semantic.SemanticError",
+              "type" : "UNDEFINED_FUNCTION"
+            } ] ],
+            "line" : 3,
+            "typeName" : null,
+            "title" : "power"
+          },
+          "arguments" : [ "java.util.ArrayList", [ {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "errors" : [ "java.util.ArrayList", [ {
+              "@class" : "org.easycompiler.semantic.SemanticError",
+              "type" : "UNDEFINED_FUNCTION"
+            } ] ],
+            "line" : 3,
+            "typeName" : null,
+            "title" : "a"
+          } ] ]
+        },
+        "type" : null
+      } ] ]
+    }, {
+      "@class" : "org.easycompiler.ast.Value",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 3,
+      "typeName" : "integer",
+      "value" : "6"
+    } ] ]
+  }
 }

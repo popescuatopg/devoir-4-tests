@@ -1,42 +1,77 @@
 {
-   "id": "Statements",
-   "statements": [
-       {
-           "id": "Declaration",
-           "elements": [
-               {
-                   "id": "DeclarationElement",
-                   "type": "integer",
-                   "title": "f",
-                   "value": {
-                       "id": "Value",
-                       "type": "integer",
-                       "value": 190,
-                       "line": 3
-                   },
-                   "line": 3
-               }
-           ],
-           "line": 3
-       },
-       {
-           "id": "Declaration",
-           "elements": [
-               {
-                   "id": "DeclarationElement",
-                   "type": "integer",
-                   "title": "f",
-                   "value": {
-                       "id": "Value",
-                       "type": "integer",
-                       "value": 190,
-                       "line": 5
-                   },
-                   "line": 5
-               }
-           ],
-           "line": 5
-       }
-   ],
-   "line": 5
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 3,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap"
+    },
+    "types" : {
+      "@class" : "java.util.HashMap"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
+    }
+  },
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 3,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Group",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 3,
+      "typeName" : null,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 3,
+        "typeName" : "integer",
+        "title" : "f",
+        "initial" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 3,
+          "typeName" : "integer",
+          "value" : "190"
+        },
+        "type" : {
+          "@class" : "org.easycompiler.type.Integer",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "title" : "integer",
+          "type" : "I64"
+        }
+      } ] ]
+    }, {
+      "@class" : "org.easycompiler.ast.Group",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 5,
+      "typeName" : null,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 5,
+        "typeName" : "integer",
+        "title" : "f",
+        "initial" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 5,
+          "typeName" : "integer",
+          "value" : "190"
+        },
+        "type" : {
+          "@class" : "org.easycompiler.type.Integer",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "title" : "integer",
+          "type" : "I64"
+        }
+      } ] ]
+    } ] ]
+  }
 }

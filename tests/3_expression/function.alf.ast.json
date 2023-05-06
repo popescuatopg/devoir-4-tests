@@ -1,38 +1,104 @@
 {
-   "id": "Statements",
-   "statements": [
-       {
-           "id": "FunctionDefinition",
-           "title": "number",
-           "parameters": [],
-           "return_type": "integer",
-           "statements": [
-               {
-                   "id": "Value",
-                   "type": "integer",
-                   "value": 3,
-                   "line": 3
-               }
-           ],
-           "line": 3
-       },
-       {
-           "id": "Expression",
-           "op": "+",
-           "left": {
-               "id": "Value",
-               "type": "integer",
-               "value": 2,
-               "line": 5
-           },
-           "right": {
-               "id": "FunctionCall",
-               "function_name": "number",
-               "parameters": [],
-               "line": 5
-           },
-           "line": 5
-       }
-   ],
-   "line": 5
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 3,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap"
+    },
+    "types" : {
+      "@class" : "java.util.HashMap"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
+    }
+  },
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 3,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 3,
+      "typeName" : "number",
+      "title" : "number",
+      "type" : {
+        "@class" : "org.easycompiler.type.Function",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : null,
+        "symbolTable" : {
+          "@class" : "org.easycompiler.semantic.SymbolTable",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "variables" : {
+            "@class" : "java.util.HashMap"
+          },
+          "types" : {
+            "@class" : "java.util.HashMap"
+          },
+          "functions" : {
+            "@class" : "java.util.HashMap"
+          }
+        },
+        "parameters" : null,
+        "statements" : {
+          "@class" : "org.easycompiler.ast.Block",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 3,
+          "typeName" : null,
+          "statements" : [ "java.util.ArrayList", [ {
+            "@class" : "org.easycompiler.ast.Return",
+            "errors" : [ "java.util.ArrayList", [ ] ],
+            "line" : 3,
+            "typeName" : null,
+            "value" : {
+              "@class" : "org.easycompiler.ast.Value",
+              "errors" : [ "java.util.ArrayList", [ ] ],
+              "line" : 3,
+              "typeName" : "integer",
+              "value" : "3"
+            }
+          } ] ]
+        },
+        "returnType" : {
+          "@class" : "org.easycompiler.type.Integer",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "title" : "integer",
+          "type" : "I64"
+        }
+      }
+    }, {
+      "@class" : "org.easycompiler.ast.BinaryExpression",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 5,
+      "typeName" : null,
+      "left" : {
+        "@class" : "org.easycompiler.ast.Value",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 5,
+        "typeName" : "integer",
+        "value" : "2"
+      },
+      "right" : {
+        "@class" : "org.easycompiler.ast.FunctionCall",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 5,
+        "typeName" : null,
+        "function_name" : {
+          "@class" : "org.easycompiler.ast.Identifier",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 5,
+          "typeName" : null,
+          "title" : "number"
+        },
+        "arguments" : [ "java.util.ArrayList", [ ] ]
+      },
+      "op" : "ADD"
+    } ] ]
+  }
 }

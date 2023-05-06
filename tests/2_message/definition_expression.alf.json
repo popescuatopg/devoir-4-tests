@@ -1,69 +1,81 @@
 {
-  "symbol_table": [
-    {
-      "variables": {},
-      "functions": {
-        "_sum": {
-          "type": "integer",
-          "parameters": [
-            {
-              "id": "FunctionDefinitionParameter",
-              "type": "integer",
-              "name": "n1",
-              "symbol": 1
-            },
-            {
-              "id": "FunctionDefinitionParameter",
-              "type": "integer",
-              "name": "n2",
-              "symbol": 1
-            }
-          ],
-          "line": 4,
-          "symbol": 1
-        }
-      },
-      "types": {},
-      "type": "Statements"
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 4,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap"
     },
-    {
-      "variables": {},
-      "functions": {},
-      "types": {},
-      "parent": 0,
-      "type": "function",
-      "function": "_sum",
-      "return_type": "integer"
-    }
-  ],
-  "ast": {
-    "id": "Statements",
-    "statements": [
-      {
-        "id": "FunctionDefinition",
-        "title": "_sum",
-        "parameters": [
-          {
-            "id": "FunctionDefinitionParameter",
-            "type": "integer",
-            "name": "n1",
-            "symbol": 1
+    "types" : {
+      "@class" : "java.util.HashMap"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap",
+      "_sum" : {
+        "@class" : "org.easycompiler.type.Function",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : null,
+        "symbolTable" : {
+          "@class" : "org.easycompiler.semantic.SymbolTable",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "variables" : {
+            "@class" : "java.util.HashMap",
+            "n1" : "integer",
+            "n2" : "integer"
           },
-          {
-            "id": "FunctionDefinitionParameter",
-            "type": "integer",
-            "name": "n2",
-            "symbol": 1
+          "types" : {
+            "@class" : "java.util.HashMap",
+            "integer" : {
+              "@class" : "org.easycompiler.type.Integer",
+              "errors" : [ "java.util.ArrayList", [ ] ],
+              "title" : "integer",
+              "type" : "I64"
+            }
+          },
+          "functions" : {
+            "@class" : "java.util.HashMap"
           }
-        ],
-        "return_type": "integer",
-        "statements": [],
-        "line": 4,
-        "symbol": 1
+        },
+        "parameters" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Property",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 4,
+          "typeName" : "integer",
+          "title" : "n1",
+          "value" : null
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 4,
+          "typeName" : "integer",
+          "title" : "n2",
+          "value" : null
+        } ] ],
+        "statements" : {
+          "@class" : "org.easycompiler.ast.Block",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 4,
+          "typeName" : null,
+          "statements" : [ "java.util.ArrayList", [ ] ]
+        },
+        "returnType" : {
+          "@class" : "org.easycompiler.type.Integer",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "title" : "integer",
+          "type" : "I64"
+        }
       }
-    ],
-    "line": 4,
-    "symbol": 0
+    }
   },
-  "error_list": []
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 4,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ ] ]
+  }
 }

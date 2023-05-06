@@ -1,47 +1,42 @@
 {
-  "symbol_table": [
-    {
-      "variables": {},
-      "functions": {},
-      "types": {},
-      "type": "Statements"
-    }
-  ],
-  "ast": {
-    "id": "Statements",
-    "statements": [
-      {
-        "id": "ReturnFunction",
-        "value": {
-          "id": "Value",
-          "type": "integer",
-          "value": 90,
-          "line": 3,
-          "symbol": 0
-        },
-        "line": 3,
-        "symbol": 0,
-        "type": ""
-      }
-    ],
-    "line": 3,
-    "symbol": 0
-  },
-  "error_list": [
-    {
-      "type": "RETURN_OUTSIDE_FUNCTION",
-      "line": 3,
-      "elements": {},
-      "text": "value is used out of function"
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 3,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap"
     },
-    {
-      "type": "TYPE_EXPRESSION",
-      "line": 3,
-      "elements": {
-        "op": "value",
-        "required": ""
-      },
-      "text": "Type expression error value "
+    "types" : {
+      "@class" : "java.util.HashMap"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
     }
-  ]
+  },
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 3,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Return",
+      "errors" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.semantic.SemanticError",
+        "type" : "RETURN_OUTSIDE_FUNCTION"
+      } ] ],
+      "line" : 3,
+      "typeName" : null,
+      "value" : {
+        "@class" : "org.easycompiler.ast.Value",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 3,
+        "typeName" : "integer",
+        "value" : "90"
+      }
+    } ] ]
+  }
 }

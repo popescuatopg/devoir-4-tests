@@ -1,65 +1,105 @@
 {
-   "id": "Statements",
-   "statements": [
-       {
-           "id": "ClassDefinition",
-           "title": "school",
-           "properties": [
-               {
-                   "id": "LocalProperty",
-                   "type": "string",
-                   "title": "name",
-                   "line": 4
-               },
-               {
-                   "id": "LocalProperty",
-                   "type": "boolean",
-                   "title": "private",
-                   "line": 5
-               },
-               {
-                   "id": "LocalProperty",
-                   "type": "integer",
-                   "title": "type",
-                   "line": 6
-               }
-           ],
-           "line": 7
-       },
-       {
-           "id": "Declaration",
-           "elements": [
-               {
-                   "id": "DeclarationElement",
-                   "type": "school",
-                   "title": "s",
-                   "line": 9
-               }
-           ],
-           "line": 9
-       },
-       {
-           "id": "Declaration",
-           "elements": [
-               {
-                   "id": "DeclarationElement",
-                   "type": "auto",
-                   "title": "t",
-                   "value": {
-                       "id": "ClassProperty",
-                       "object": {
-                           "id": "Variable",
-                           "title": "s",
-                           "line": 11
-                        },
-                       "title": "type",
-                       "line": 11
-                   },
-                   "line": 11
-               }
-           ],
-           "line": 11
-       }
-   ],
-   "line": 11
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 3,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap"
+    },
+    "types" : {
+      "@class" : "java.util.HashMap"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
+    }
+  },
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 3,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 3,
+      "typeName" : "school",
+      "title" : "school",
+      "type" : {
+        "@class" : "org.easycompiler.type.Struct",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : "school",
+        "properties" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Property",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 4,
+          "typeName" : "string",
+          "title" : "name",
+          "value" : null
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 5,
+          "typeName" : "bool",
+          "title" : "private",
+          "value" : null
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 6,
+          "typeName" : "integer",
+          "title" : "type",
+          "value" : null
+        } ] ]
+      }
+    }, {
+      "@class" : "org.easycompiler.ast.Group",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 9,
+      "typeName" : null,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 9,
+        "typeName" : "school",
+        "title" : "s",
+        "initial" : null,
+        "type" : {
+          "@class" : "org.easycompiler.type.Placeholder",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "title" : "school"
+        }
+      } ] ]
+    }, {
+      "@class" : "org.easycompiler.ast.Group",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 11,
+      "typeName" : null,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 11,
+        "typeName" : null,
+        "title" : "t",
+        "initial" : {
+          "@class" : "org.easycompiler.ast.StructElement",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 11,
+          "typeName" : null,
+          "struct" : {
+            "@class" : "org.easycompiler.ast.Identifier",
+            "errors" : [ "java.util.ArrayList", [ ] ],
+            "line" : 11,
+            "typeName" : null,
+            "title" : "s"
+          },
+          "property" : "type"
+        },
+        "type" : null
+      } ] ]
+    } ] ]
+  }
 }

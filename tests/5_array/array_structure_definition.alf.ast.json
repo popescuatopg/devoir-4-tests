@@ -1,51 +1,95 @@
 {
-   "id": "Statements",
-   "statements": [
-       {
-           "id": "ClassDefinition",
-           "title": "school",
-           "properties": [
-               {
-                   "id": "LocalProperty",
-                   "type": "string",
-                   "title": "name",
-                   "line": 4
-               },
-               {
-                   "id": "LocalProperty",
-                   "type": "boolean",
-                   "title": "private",
-                   "line": 5
-               },
-               {
-                   "id": "LocalProperty",
-                   "type": "integer",
-                   "title": "type",
-                   "line": 6
-               }
-           ],
-           "line": 7
-       },
-       {
-           "id": "Array",
-           "title": "school_array",
-           "element_type": "school",
-           "from": "1",
-           "to": "9",
-           "line": 9
-       },
-       {
-           "id": "Declaration",
-           "elements": [
-               {
-                   "id": "DeclarationElement",
-                   "type": "list_of_schools",
-                   "title": "school_array",
-                   "line": 11
-               }
-           ],
-           "line": 11
-       }
-   ],
-   "line": 11
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 3,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap"
+    },
+    "types" : {
+      "@class" : "java.util.HashMap"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
+    }
+  },
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 3,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 3,
+      "typeName" : "school",
+      "title" : "school",
+      "type" : {
+        "@class" : "org.easycompiler.type.Struct",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : "school",
+        "properties" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Property",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 4,
+          "typeName" : "string",
+          "title" : "name",
+          "value" : null
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 5,
+          "typeName" : "boolean",
+          "title" : "private",
+          "value" : null
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 6,
+          "typeName" : "integer",
+          "title" : "type",
+          "value" : null
+        } ] ]
+      }
+    }, {
+      "@class" : "org.easycompiler.ast.Definition",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 9,
+      "typeName" : "school_array",
+      "title" : "school_array",
+      "type" : {
+        "@class" : "org.easycompiler.type.Array",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : "school_array",
+        "type" : {
+          "@class" : "org.easycompiler.type.Placeholder",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "title" : "school"
+        },
+        "length" : 8
+      }
+    }, {
+      "@class" : "org.easycompiler.ast.Group",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 11,
+      "typeName" : null,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 11,
+        "typeName" : "school_array",
+        "title" : "list_of_schools",
+        "initial" : null,
+        "type" : {
+          "@class" : "org.easycompiler.type.Placeholder",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "title" : "school_array"
+        }
+      } ] ]
+    } ] ]
+  }
 }

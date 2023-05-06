@@ -1,27 +1,90 @@
 {
-   "id": "Statements",
-   "statements": [
-       {
-           "id": "FunctionDefinition",
-           "title": "_getpid",
-           "parameters": [],
-           "return_type": "integer",
-           "statements": [
-               {
-                   "id": "Value",
-                   "type": "integer",
-                   "value": 120,
-                   "line": 2
-               }
-           ],
-           "line": 2
-       },
-       {
-           "id": "FunctionCall",
-           "function_name": "_getpid",
-           "parameters": [],
-           "line": 4
-       }
-   ],
-   "line": 4
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 2,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap"
+    },
+    "types" : {
+      "@class" : "java.util.HashMap"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
+    }
+  },
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 2,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 2,
+      "typeName" : "_getpid",
+      "title" : "_getpid",
+      "type" : {
+        "@class" : "org.easycompiler.type.Function",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : null,
+        "symbolTable" : {
+          "@class" : "org.easycompiler.semantic.SymbolTable",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "variables" : {
+            "@class" : "java.util.HashMap"
+          },
+          "types" : {
+            "@class" : "java.util.HashMap"
+          },
+          "functions" : {
+            "@class" : "java.util.HashMap"
+          }
+        },
+        "parameters" : null,
+        "statements" : {
+          "@class" : "org.easycompiler.ast.Block",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 2,
+          "typeName" : null,
+          "statements" : [ "java.util.ArrayList", [ {
+            "@class" : "org.easycompiler.ast.Return",
+            "errors" : [ "java.util.ArrayList", [ ] ],
+            "line" : 2,
+            "typeName" : null,
+            "value" : {
+              "@class" : "org.easycompiler.ast.Value",
+              "errors" : [ "java.util.ArrayList", [ ] ],
+              "line" : 2,
+              "typeName" : "integer",
+              "value" : "120"
+            }
+          } ] ]
+        },
+        "returnType" : {
+          "@class" : "org.easycompiler.type.Integer",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "title" : "integer",
+          "type" : "I64"
+        }
+      }
+    }, {
+      "@class" : "org.easycompiler.ast.FunctionCall",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 4,
+      "typeName" : null,
+      "function_name" : {
+        "@class" : "org.easycompiler.ast.Identifier",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 4,
+        "typeName" : null,
+        "title" : "_getpid"
+      },
+      "arguments" : [ "java.util.ArrayList", [ ] ]
+    } ] ]
+  }
 }
