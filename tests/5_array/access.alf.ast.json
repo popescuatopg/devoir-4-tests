@@ -1,47 +1,94 @@
 {
-   "id": "Statements",
-   "statements": [
-       {
-           "id": "Array",
-           "title": "details",
-           "element_type": "string",
-           "from": "1",
-           "to": "9",
-           "line": 3
-       },
-       {
-           "id": "Declaration",
-           "elements": [
-               {
-                   "id": "DeclarationElement",
-                   "type": "details",
-                   "title": "v",
-                   "line": 5
-               }
-           ],
-           "line": 5
-       },
-       {
-           "id": "Assign",
-           "to": {
-               "id": "ArrayElement",
-               "array": "v",
-               "index": {
-                   "id": "Value",
-                   "type": "integer",
-                   "value": 5,
-                   "line": 7
-               },
-               "line": 7
-           },
-           "from": {
-               "id": "Value",
-               "type": "string",
-               "value": "The new name for the school",
-               "line": 7
-           },
-           "line": 7
-       }
-   ],
-   "line": 7
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 3,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap"
+    },
+    "types" : {
+      "@class" : "java.util.HashMap"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
+    }
+  },
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 3,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 3,
+      "typeName" : "details",
+      "title" : "details",
+      "type" : {
+        "@class" : "org.easycompiler.type.Array",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : "details",
+        "type" : {
+          "@class" : "org.easycompiler.type.Str",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "title" : "string"
+        },
+        "length" : 8
+      }
+    }, {
+      "@class" : "org.easycompiler.ast.Group",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 5,
+      "typeName" : null,
+      "nodes" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.ast.VariableDefinition",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 5,
+        "typeName" : "details",
+        "title" : "v",
+        "initial" : null,
+        "type" : {
+          "@class" : "org.easycompiler.type.Placeholder",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "title" : "details"
+        }
+      } ] ]
+    }, {
+      "@class" : "org.easycompiler.ast.Assignment",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 7,
+      "typeName" : null,
+      "to" : {
+        "@class" : "org.easycompiler.ast.ArrayElement",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 7,
+        "typeName" : null,
+        "array" : {
+          "@class" : "org.easycompiler.ast.Identifier",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 7,
+          "typeName" : null,
+          "title" : "v"
+        },
+        "index" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 7,
+          "typeName" : "integer",
+          "value" : "5"
+        }
+      },
+      "from" : {
+        "@class" : "org.easycompiler.ast.Value",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 7,
+        "typeName" : "string",
+        "value" : "The new name for the school"
+      }
+    } ] ]
+  }
 }

@@ -1,3 +1,3 @@
 /* Call function with parameter */
-
-exec print (text="text to write");
+function print (string text):string;
+exec print ("text to write");

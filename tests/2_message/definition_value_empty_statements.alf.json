@@ -1,77 +1,90 @@
 {
-  "symbol_table": [
-    {
-      "variables": {},
-      "functions": {
-        "print": {
-          "type": "string",
-          "parameters": [
-            {
-              "id": "FunctionDefinitionParameter",
-              "type": "string",
-              "name": "text",
-              "symbol": 1
-            }
-          ],
-          "line": 6,
-          "symbol": 1
-        }
-      },
-      "types": {},
-      "type": "Statements"
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 3,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap"
     },
-    {
-      "variables": {},
-      "functions": {},
-      "types": {},
-      "parent": 0,
-      "type": "function",
-      "function": "print",
-      "return_type": "string"
-    }
-  ],
-  "ast": {
-    "id": "Statements",
-    "statements": [
-      {
-        "id": "FunctionDefinition",
-        "title": "print",
-        "parameters": [
-          {
-            "id": "FunctionDefinitionParameter",
-            "type": "string",
-            "name": "text",
-            "symbol": 1
+    "types" : {
+      "@class" : "java.util.HashMap"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap",
+      "print" : {
+        "@class" : "org.easycompiler.type.Function",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : null,
+        "symbolTable" : {
+          "@class" : "org.easycompiler.semantic.SymbolTable",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "variables" : {
+            "@class" : "java.util.HashMap",
+            "text" : "string"
+          },
+          "types" : {
+            "@class" : "java.util.HashMap",
+            "string" : {
+              "@class" : "org.easycompiler.type.Str",
+              "errors" : [ "java.util.ArrayList", [ ] ],
+              "title" : "string"
+            }
+          },
+          "functions" : {
+            "@class" : "java.util.HashMap"
           }
-        ],
-        "return_type": "string",
-        "statements": [
-          {
-            "id": "Assign",
-            "to": {
-              "id": "Variable",
-              "title": "text",
-              "line": 5,
-              "symbol": 1,
-              "type": "string"
+        },
+        "parameters" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Property",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 3,
+          "typeName" : "string",
+          "title" : "text",
+          "value" : null
+        } ] ],
+        "statements" : {
+          "@class" : "org.easycompiler.ast.Block",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 4,
+          "typeName" : null,
+          "statements" : [ "java.util.ArrayList", [ {
+            "@class" : "org.easycompiler.ast.Assignment",
+            "errors" : [ "java.util.ArrayList", [ ] ],
+            "line" : 5,
+            "typeName" : null,
+            "to" : {
+              "@class" : "org.easycompiler.ast.Identifier",
+              "errors" : [ "java.util.ArrayList", [ ] ],
+              "line" : 5,
+              "typeName" : "string",
+              "title" : "text"
             },
-            "from": {
-              "id": "Value",
-              "type": "string",
-              "value": "",
-              "line": 5,
-              "symbol": 1
-            },
-            "line": 5,
-            "symbol": 1
-          }
-        ],
-        "line": 6,
-        "symbol": 1
+            "from" : {
+              "@class" : "org.easycompiler.ast.Value",
+              "errors" : [ "java.util.ArrayList", [ ] ],
+              "line" : 5,
+              "typeName" : "string",
+              "value" : ""
+            }
+          } ] ]
+        },
+        "returnType" : {
+          "@class" : "org.easycompiler.type.Str",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "title" : "string"
+        }
       }
-    ],
-    "line": 6,
-    "symbol": 0
+    }
   },
-  "error_list": []
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 3,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ ] ]
+  }
 }

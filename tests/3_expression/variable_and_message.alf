@@ -3,10 +3,10 @@
 declare integer n;
 
 function number (integer value): integer 
-BEGIN
+begin
 3+4;
-END
+end;
 
 
 n = 3;
-n + exec number() + " text";
+n + exec number(5) + " text";

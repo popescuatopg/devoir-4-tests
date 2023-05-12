@@ -6,12 +6,12 @@ function run_test {
     rm -rf output.*
     filename="$dir/tests/$1"
 
-    # echo $filename
-    
+     echo $filename
+
     outputname="$(dirname $filename)/$(basename $1 .alf).out"
     astoutputname="$(dirname $filename)/$(basename $1).json"
     echo Running $filename
-    node $dir/../index.js $filename.ast.json output.ast.json &> $outputname
+    java -cp ./../libs/*:./../out org.example.Main $filename.ast.json output.ast.json &> $outputname
     ERROR=0
 
     if node verify.js "$astoutputname" "output.ast.json" &> output.report;

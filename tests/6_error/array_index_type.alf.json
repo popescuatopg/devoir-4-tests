@@ -1,89 +1,80 @@
 {
-  "symbol_table": [
-    {
-      "variables": {
-        "l": {
-          "type": "a",
-          "line": 5
-        }
-      },
-      "functions": {},
-      "types": {
-        "a": {
-          "type": "array",
-          "line": 3,
-          "element_type": "string",
-          "from": "1",
-          "to": "9"
-        }
-      },
-      "type": "Statements"
-    }
-  ],
-  "ast": {
-    "id": "Statements",
-    "statements": [
-      {
-        "id": "Array",
-        "title": "a",
-        "element_type": "string",
-        "from": "1",
-        "to": "9",
-        "line": 3,
-        "symbol": 0
-      },
-      {
-        "id": "Declaration",
-        "elements": [
-          {
-            "id": "DeclarationElement",
-            "type": "a",
-            "title": "l",
-            "line": 5
-          }
-        ],
-        "line": 5,
-        "symbol": 0
-      },
-      {
-        "id": "Assign",
-        "to": {
-          "id": "ArrayElement",
-          "array": "l",
-          "index": {
-            "id": "Value",
-            "type": "string",
-            "value": "text",
-            "line": 7,
-            "symbol": 0
-          },
-          "line": 7,
-          "symbol": 0,
-          "type": "string"
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 3,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap",
+      "l" : "a"
+    },
+    "types" : {
+      "@class" : "java.util.HashMap",
+      "a" : {
+        "@class" : "org.easycompiler.type.Array",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : "a",
+        "type" : {
+          "@class" : "org.easycompiler.type.Str",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "title" : "string"
         },
-        "from": {
-          "id": "Value",
-          "type": "string",
-          "value": "text",
-          "line": 7,
-          "symbol": 0
-        },
-        "line": 7,
-        "symbol": 0
+        "length" : 8
       }
-    ],
-    "line": 7,
-    "symbol": 0
-  },
-  "error_list": [
-    {
-      "type": "ARRAY_INDEX_TYPE",
-      "line": 7,
-      "elements": {
-        "array": "l",
-        "index": "string"
-      },
-      "text": "Array (l) index must be integer or symbol"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
     }
-  ]
+  },
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 3,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Group",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 5,
+      "typeName" : null,
+      "nodes" : [ "java.util.ArrayList", [ ] ]
+    }, {
+      "@class" : "org.easycompiler.ast.Assignment",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 7,
+      "typeName" : null,
+      "to" : {
+        "@class" : "org.easycompiler.ast.ArrayElement",
+        "errors" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.semantic.SemanticError",
+          "type" : "INDEX_NOT_INTEGER"
+        } ] ],
+        "line" : 7,
+        "typeName" : "string",
+        "array" : {
+          "@class" : "org.easycompiler.ast.Identifier",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 7,
+          "typeName" : "a",
+          "title" : "l"
+        },
+        "index" : {
+          "@class" : "org.easycompiler.ast.Value",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 7,
+          "typeName" : "string",
+          "value" : "text"
+        }
+      },
+      "from" : {
+        "@class" : "org.easycompiler.ast.Value",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 7,
+        "typeName" : "string",
+        "value" : "text"
+      }
+    } ] ]
+  }
 }

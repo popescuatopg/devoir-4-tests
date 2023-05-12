@@ -9,4 +9,4 @@ begin
 	return p;
 end;
 
-exec power (a="6.0", n=6);
+exec power ("6.0", 6);

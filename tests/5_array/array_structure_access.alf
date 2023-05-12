@@ -7,6 +7,6 @@ class school
 end;
 
 school array school_array[1:9];
+declare school_array mySchools;
 
-
-school_array[1].name = "School";
+mySchools[1].name = "School";

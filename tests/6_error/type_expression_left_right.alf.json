@@ -1,50 +1,50 @@
 {
-  "symbol_table": [
-    {
-      "variables": {},
-      "functions": {},
-      "types": {},
-      "type": "Statements"
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 3,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap"
+    },
+    "types" : {
+      "@class" : "java.util.HashMap"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
     }
-  ],
-  "ast": {
-    "id": "Statements",
-    "statements": [
-      {
-        "id": "Expression",
-        "op": "+",
-        "left": {
-          "id": "Value",
-          "type": "boolean",
-          "value": false,
-          "line": 3,
-          "symbol": 0
-        },
-        "right": {
-          "id": "Value",
-          "type": "integer",
-          "value": 90,
-          "line": 3,
-          "symbol": 0
-        },
-        "line": 3,
-        "symbol": 0,
-        "type": ""
-      }
-    ],
-    "line": 3,
-    "symbol": 0
   },
-  "error_list": [
-    {
-      "type": "TYPE_EXPRESSION",
-      "line": 3,
-      "elements": {
-        "left": "boolean",
-        "right": "integer",
-        "op": "+"
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 3,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.BinaryExpression",
+      "errors" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.semantic.SemanticError",
+        "type" : "EXPRESSION_TYPE_MISMATCH"
+      } ] ],
+      "line" : 3,
+      "typeName" : null,
+      "left" : {
+        "@class" : "org.easycompiler.ast.Value",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 3,
+        "typeName" : "boolean",
+        "value" : "false"
       },
-      "text": "Type expression error boolean + integer"
-    }
-  ]
+      "right" : {
+        "@class" : "org.easycompiler.ast.Value",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 3,
+        "typeName" : "integer",
+        "value" : "90"
+      },
+      "op" : "ADD"
+    } ] ]
+  }
 }

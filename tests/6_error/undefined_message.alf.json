@@ -1,47 +1,58 @@
 {
-  "symbol_table": [
-    {
-      "variables": {},
-      "functions": {},
-      "types": {},
-      "type": "Statements"
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 2,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap"
+    },
+    "types" : {
+      "@class" : "java.util.HashMap"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
     }
-  ],
-  "ast": {
-    "id": "Statements",
-    "statements": [
-      {
-        "id": "FunctionCall",
-        "function_name": "print",
-        "parameters": [
-          {
-            "id": "FunctionCallParameter",
-            "name": "text",
-            "value": {
-              "id": "Value",
-              "type": "string",
-              "value": "text to write",
-              "line": 2,
-              "symbol": 0
-            }
-          }
-        ],
-        "line": 2,
-        "symbol": 0,
-        "type": ""
-      }
-    ],
-    "line": 2,
-    "symbol": 0
   },
-  "error_list": [
-    {
-      "type": "UNDEFINED_FUNCTION",
-      "line": 2,
-      "elements": {
-        "id": "print"
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 2,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Identifier",
+      "errors" : [ "java.util.ArrayList", [ {
+        "@class" : "org.easycompiler.semantic.SemanticError",
+        "type" : "UNDEFINED_VARIABLE"
+      } ] ],
+      "line" : 2,
+      "typeName" : null,
+      "title" : "print"
+    }, {
+      "@class" : "org.easycompiler.ast.Assignment",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 2,
+      "typeName" : null,
+      "to" : {
+        "@class" : "org.easycompiler.ast.Identifier",
+        "errors" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.semantic.SemanticError",
+          "type" : "UNDEFINED_VARIABLE"
+        } ] ],
+        "line" : 2,
+        "typeName" : "string",
+        "title" : "text"
       },
-      "text": "Undefined function print"
-    }
-  ]
+      "from" : {
+        "@class" : "org.easycompiler.ast.Value",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 2,
+        "typeName" : "string",
+        "value" : "text to write"
+      }
+    } ] ]
+  }
 }

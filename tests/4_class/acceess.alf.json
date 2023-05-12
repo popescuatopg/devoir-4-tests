@@ -1,112 +1,88 @@
 {
-  "symbol_table": [
-    {
-      "variables": {
-        "s": {
-          "type": "school",
-          "line": 8
-        }
-      },
-      "functions": {},
-      "types": {
-        "school": {
-          "type": "struct",
-          "properties": [
-            {
-              "id": "LocalProperty",
-              "type": "string",
-              "title": "name",
-              "line": 3
-            },
-            {
-              "id": "LocalProperty",
-              "type": "boolean",
-              "title": "private",
-              "line": 4
-            },
-            {
-              "id": "LocalProperty",
-              "type": "integer",
-              "title": "type",
-              "line": 5
-            }
-          ]
-        }
-      },
-      "type": "Statements"
-    }
-  ],
-  "ast": {
-    "id": "Statements",
-    "statements": [
-      {
-        "id": "ClassDefinition",
-        "title": "school",
-        "properties": [
-          {
-            "id": "LocalProperty",
-            "type": "string",
-            "title": "name",
-            "line": 3
-          },
-          {
-            "id": "LocalProperty",
-            "type": "boolean",
-            "title": "private",
-            "line": 4
-          },
-          {
-            "id": "LocalProperty",
-            "type": "integer",
-            "title": "type",
-            "line": 5
-          }
-        ],
-        "line": 6,
-        "symbol": 0
-      },
-      {
-        "id": "Declaration",
-        "elements": [
-          {
-            "id": "DeclarationElement",
-            "type": "school",
-            "title": "s",
-            "line": 8
-          }
-        ],
-        "line": 8,
-        "symbol": 0
-      },
-      {
-        "id": "Assign",
-        "to": {
-          "id": "ClassProperty",
-          "object": {
-            "id": "Variable",
-            "title": "s",
-            "line": 10,
-            "type": "school",
-            "symbol": 0
-          },
-          "title": "name",
-          "line": 10,
-          "symbol": 0,
-          "type": "string"
-        },
-        "from": {
-          "id": "Value",
-          "type": "string",
-          "value": "The new name for the school",
-          "line": 10,
-          "symbol": 0
-        },
-        "line": 10,
-        "symbol": 0
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 2,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap",
+      "s" : "school",
+      "school" : "school"
+    },
+    "types" : {
+      "@class" : "java.util.HashMap",
+      "school" : {
+        "@class" : "org.easycompiler.type.Struct",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : "school",
+        "properties" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Property",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 3,
+          "typeName" : "string",
+          "title" : "name",
+          "value" : null
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 4,
+          "typeName" : "boolean",
+          "title" : "private",
+          "value" : null
+        }, {
+          "@class" : "org.easycompiler.ast.Property",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 5,
+          "typeName" : "integer",
+          "title" : "type",
+          "value" : null
+        } ] ]
       }
-    ],
-    "line": 10,
-    "symbol": 0
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
+    }
   },
-  "error_list": []
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 2,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Group",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 8,
+      "typeName" : null,
+      "nodes" : [ "java.util.ArrayList", [ ] ]
+    }, {
+      "@class" : "org.easycompiler.ast.Assignment",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 10,
+      "typeName" : null,
+      "to" : {
+        "@class" : "org.easycompiler.ast.StructElement",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 10,
+        "typeName" : "string",
+        "struct" : {
+          "@class" : "org.easycompiler.ast.Identifier",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 10,
+          "typeName" : "school",
+          "title" : "s"
+        },
+        "property" : "name"
+      },
+      "from" : {
+        "@class" : "org.easycompiler.ast.Value",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "line" : 10,
+        "typeName" : "string",
+        "value" : "The new name for the school"
+      }
+    } ] ]
+  }
 }

@@ -1,32 +1,65 @@
 {
-   "id": "Statements",
-   "statements": [
-       {
-           "id": "ClassDefinition",
-           "title": "s",
-           "properties": [
-               {
-                   "id": "LocalProperty",
-                   "type": "string",
-                   "title": "title",
-                   "line": 4
-               }
-           ],
-           "line": 5
-       },
-       {
-           "id": "ClassDefinition",
-           "title": "s",
-           "properties": [
-               {
-                   "id": "LocalProperty",
-                   "type": "string",
-                   "title": "title",
-                   "line": 8
-               }
-           ],
-           "line": 9
-       }
-   ],
-   "line": 9
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 3,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap"
+    },
+    "types" : {
+      "@class" : "java.util.HashMap"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
+    }
+  },
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 3,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 3,
+      "typeName" : "s",
+      "title" : "s",
+      "type" : {
+        "@class" : "org.easycompiler.type.Struct",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : "s",
+        "properties" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Property",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 4,
+          "typeName" : "string",
+          "title" : "title",
+          "value" : null
+        } ] ]
+      }
+    }, {
+      "@class" : "org.easycompiler.ast.Definition",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 7,
+      "typeName" : "s",
+      "title" : "s",
+      "type" : {
+        "@class" : "org.easycompiler.type.Struct",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : "s",
+        "properties" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.ast.Property",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "line" : 8,
+          "typeName" : "strinf",
+          "title" : "title",
+          "value" : null
+        } ] ]
+      }
+    } ] ]
+  }
 }

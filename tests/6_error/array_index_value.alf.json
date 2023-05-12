@@ -1,46 +1,47 @@
 {
-  "symbol_table": [
-    {
-      "variables": {},
-      "functions": {},
-      "types": {
-        "a": {
-          "type": "array",
-          "line": 3,
-          "element_type": "string",
-          "from": "90",
-          "to": "45"
-        }
-      },
-      "type": "Statements"
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 3,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap"
+    },
+    "types" : {
+      "@class" : "java.util.HashMap"
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
     }
-  ],
-  "ast": {
-    "id": "Statements",
-    "statements": [
-      {
-        "id": "Array",
-        "title": "a",
-        "element_type": "string",
-        "from": "90",
-        "to": "45",
-        "line": 3,
-        "symbol": 0
-      }
-    ],
-    "line": 3,
-    "symbol": 0
   },
-  "error_list": [
-    {
-      "type": "ARRAY_INDEX_VALUE",
-      "line": 3,
-      "elements": {
-        "array": "a",
-        "low_index": "90",
-        "high_index": "45"
-      },
-      "text": "Array index lower value (90) must be smaller that the upper value (45)"
-    }
-  ]
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 3,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Definition",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 3,
+      "typeName" : "a",
+      "title" : "a",
+      "type" : {
+        "@class" : "org.easycompiler.type.Array",
+        "errors" : [ "java.util.ArrayList", [ {
+          "@class" : "org.easycompiler.semantic.SemanticError",
+          "type" : "ARRAY_INDEX_VALUE"
+        } ] ],
+        "title" : "a",
+        "type" : {
+          "@class" : "org.easycompiler.type.Str",
+          "errors" : [ "java.util.ArrayList", [ ] ],
+          "title" : "string"
+        },
+        "length" : -45
+      }
+    } ] ]
+  }
 }

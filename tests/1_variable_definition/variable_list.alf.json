@@ -1,66 +1,59 @@
 {
-  "symbol_table": [
-    {
-      "variables": {
-        "n": {
-          "type": "integer",
-          "line": 2
-        },
-        "r": {
-          "type": "float",
-          "line": 2
-        },
-        "l": {
-          "type": "boolean",
-          "line": 2
-        },
-        "s": {
-          "type": "string",
-          "line": 2
-        }
+  "@class" : "org.easycompiler.ast.Module",
+  "errors" : [ "java.util.ArrayList", [ ] ],
+  "line" : 2,
+  "typeName" : null,
+  "symbolTable" : {
+    "@class" : "org.easycompiler.semantic.SymbolTable",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "variables" : {
+      "@class" : "java.util.HashMap",
+      "r" : "float",
+      "s" : "string",
+      "l" : "boolean",
+      "n" : "integer"
+    },
+    "types" : {
+      "@class" : "java.util.HashMap",
+      "boolean" : {
+        "@class" : "org.easycompiler.type.Boolean",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : "boolean"
       },
-      "functions": {},
-      "types": {},
-      "type": "Statements"
-    }
-  ],
-  "ast": {
-    "id": "Statements",
-    "statements": [
-      {
-        "id": "Declaration",
-        "elements": [
-          {
-            "id": "DeclarationElement",
-            "type": "integer",
-            "title": "n",
-            "line": 2
-          },
-          {
-            "id": "DeclarationElement",
-            "type": "float",
-            "title": "r",
-            "line": 2
-          },
-          {
-            "id": "DeclarationElement",
-            "type": "boolean",
-            "title": "l",
-            "line": 2
-          },
-          {
-            "id": "DeclarationElement",
-            "type": "string",
-            "title": "s",
-            "line": 2
-          }
-        ],
-        "line": 2,
-        "symbol": 0
+      "string" : {
+        "@class" : "org.easycompiler.type.Str",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : "string"
+      },
+      "integer" : {
+        "@class" : "org.easycompiler.type.Integer",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : "integer",
+        "type" : "I64"
+      },
+      "float" : {
+        "@class" : "org.easycompiler.type.Float",
+        "errors" : [ "java.util.ArrayList", [ ] ],
+        "title" : "float",
+        "type" : "F64"
       }
-    ],
-    "line": 2,
-    "symbol": 0
+    },
+    "functions" : {
+      "@class" : "java.util.HashMap"
+    }
   },
-  "error_list": []
+  "title" : "program",
+  "block" : {
+    "@class" : "org.easycompiler.ast.Block",
+    "errors" : [ "java.util.ArrayList", [ ] ],
+    "line" : 2,
+    "typeName" : null,
+    "statements" : [ "java.util.ArrayList", [ {
+      "@class" : "org.easycompiler.ast.Group",
+      "errors" : [ "java.util.ArrayList", [ ] ],
+      "line" : 2,
+      "typeName" : null,
+      "nodes" : [ "java.util.ArrayList", [ ] ]
+    } ] ]
+  }
 }
