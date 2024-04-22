@@ -1,140 +1,121 @@
 {
-  "@class" : "org.easycompiler.ast.Module",
-  "errors" : [ "java.util.ArrayList", [ ] ],
-  "line" : 3,
-  "typeName" : null,
-  "symbolTable" : {
-    "@class" : "org.easycompiler.semantic.SymbolTable",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "variables" : {
-      "@class" : "java.util.HashMap"
-    },
-    "types" : {
-      "@class" : "java.util.HashMap"
-    },
-    "functions" : {
-      "@class" : "java.util.HashMap"
-    }
-  },
-  "title" : "program",
+  "@type" : "Module",
   "block" : {
-    "@class" : "org.easycompiler.ast.Block",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "line" : 3,
-    "typeName" : null,
-    "statements" : [ "java.util.ArrayList", [ {
-      "@class" : "org.easycompiler.ast.Definition",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 3,
-      "typeName" : "details",
-      "title" : "details",
-      "type" : {
-        "@class" : "org.easycompiler.type.Array",
-        "errors" : [ "java.util.ArrayList", [ ] ],
+    "@type" : "Block",
+    "statements" : [ {
+      "@type" : "Definition",
+      "definedType" : {
+        "@type" : "Array",
         "title" : "details",
-        "type" : {
-          "@class" : "org.easycompiler.type.Str",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "title" : "string"
-        },
-        "length" : 8
-      }
-    }, {
-      "@class" : "org.easycompiler.ast.Group",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 5,
-      "typeName" : null,
-      "nodes" : [ "java.util.ArrayList", [ {
-        "@class" : "org.easycompiler.ast.VariableDefinition",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "line" : 5,
-        "typeName" : null,
-        "title" : "v",
-        "initial" : {
-          "@class" : "org.easycompiler.ast.Identifier",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 5,
-          "typeName" : null,
-          "title" : "details"
-        },
-        "type" : null
-      } ] ]
-    }, {
-      "@class" : "org.easycompiler.ast.Definition",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 7,
-      "typeName" : "random",
-      "title" : "random",
-      "type" : {
-        "@class" : "org.easycompiler.type.Struct",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "title" : "random",
-        "properties" : [ "java.util.ArrayList", [ {
-          "@class" : "org.easycompiler.ast.Property",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 8,
-          "typeName" : "integer",
-          "title" : "position",
-          "value" : null
-        } ] ]
-      }
-    }, {
-      "@class" : "org.easycompiler.ast.Group",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 11,
-      "typeName" : null,
-      "nodes" : [ "java.util.ArrayList", [ {
-        "@class" : "org.easycompiler.ast.VariableDefinition",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "line" : 11,
-        "typeName" : "random",
-        "title" : "s",
-        "initial" : null,
-        "type" : {
-          "@class" : "org.easycompiler.type.Placeholder",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "title" : "random"
-        }
-      } ] ]
-    }, {
-      "@class" : "org.easycompiler.ast.Assignment",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 13,
-      "typeName" : null,
-      "to" : {
-        "@class" : "org.easycompiler.ast.ArrayElement",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "line" : 13,
-        "typeName" : null,
-        "array" : {
-          "@class" : "org.easycompiler.ast.Identifier",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 13,
-          "typeName" : null,
-          "title" : "v"
-        },
-        "index" : {
-          "@class" : "org.easycompiler.ast.StructElement",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 13,
-          "typeName" : null,
-          "struct" : {
-            "@class" : "org.easycompiler.ast.Identifier",
-            "errors" : [ "java.util.ArrayList", [ ] ],
-            "line" : 13,
-            "typeName" : null,
-            "title" : "s"
+        "typeName" : "String",
+        "length" : {
+          "@type" : "BinaryExpression",
+          "left" : {
+            "@type" : "Value",
+            "value" : "9",
+            "typeName" : "I64",
+            "line" : 3
           },
-          "property" : "position"
+          "right" : {
+            "@type" : "Value",
+            "value" : "1",
+            "typeName" : "I64",
+            "line" : 3
+          },
+          "op" : "SUB",
+          "typeName" : null,
+          "line" : 3
         }
       },
+      "line" : 3
+    }, {
+      "@type" : "Group",
+      "declarations" : [ {
+        "@type" : "VariableDefinition",
+        "variable" : {
+          "@type" : "Identifier",
+          "title" : "v",
+          "typeName" : null,
+          "line" : 5
+        },
+        "init" : {
+          "@type" : "Identifier",
+          "title" : "details",
+          "typeName" : null,
+          "line" : 5
+        },
+        "line" : 5
+      } ],
+      "line" : 5
+    }, {
+      "@type" : "Definition",
+      "definedType" : {
+        "@type" : "Struct",
+        "title" : "random",
+        "properties" : [ {
+          "@type" : "Property",
+          "title" : "position",
+          "typeName" : "I64",
+          "defaultValue" : null,
+          "line" : 8
+        } ]
+      },
+      "line" : 7
+    }, {
+      "@type" : "Group",
+      "declarations" : [ {
+        "@type" : "VariableDefinition",
+        "variable" : {
+          "@type" : "Identifier",
+          "title" : "s",
+          "typeName" : "random",
+          "line" : 11
+        },
+        "init" : null,
+        "line" : 11
+      } ],
+      "line" : 11
+    }, {
+      "@type" : "Assignment",
+      "to" : {
+        "@type" : "ArrayElement",
+        "array" : {
+          "@type" : "Identifier",
+          "title" : "v",
+          "typeName" : null,
+          "line" : 13
+        },
+        "index" : {
+          "@type" : "StructElement",
+          "struct" : {
+            "@type" : "Identifier",
+            "title" : "s",
+            "typeName" : null,
+            "line" : 13
+          },
+          "field" : "position",
+          "typeName" : null,
+          "line" : 13
+        },
+        "typeName" : null,
+        "line" : 13
+      },
       "from" : {
-        "@class" : "org.easycompiler.ast.Value",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "line" : 13,
-        "typeName" : "string",
-        "value" : "The new name for the school"
-      }
-    } ] ]
-  }
+        "@type" : "Value",
+        "value" : "The new name for the school",
+        "typeName" : "String",
+        "line" : 13
+      },
+      "line" : 13
+    } ],
+    "line" : 3,
+    "scope" : {
+      "@type" : "SymbolTable",
+      "variables" : { },
+      "types" : { },
+      "functions" : { }
+    }
+  },
+  "line" : 3,
+  "scope" : null
 }

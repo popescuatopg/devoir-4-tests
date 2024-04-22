@@ -1,90 +1,63 @@
 {
-  "@class" : "org.easycompiler.ast.Module",
-  "errors" : [ "java.util.ArrayList", [ ] ],
-  "line" : 3,
-  "typeName" : null,
-  "symbolTable" : {
-    "@class" : "org.easycompiler.semantic.SymbolTable",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "variables" : {
-      "@class" : "java.util.HashMap"
-    },
-    "types" : {
-      "@class" : "java.util.HashMap"
-    },
-    "functions" : {
-      "@class" : "java.util.HashMap"
-    }
-  },
-  "title" : "program",
+  "@type" : "Module",
   "block" : {
-    "@class" : "org.easycompiler.ast.Block",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "line" : 3,
-    "typeName" : null,
-    "statements" : [ "java.util.ArrayList", [ {
-      "@class" : "org.easycompiler.ast.Definition",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 3,
-      "typeName" : "print",
-      "title" : "print",
-      "type" : {
-        "@class" : "org.easycompiler.type.Function",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "title" : null,
-        "symbolTable" : {
-          "@class" : "org.easycompiler.semantic.SymbolTable",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "variables" : {
-            "@class" : "java.util.HashMap"
-          },
-          "types" : {
-            "@class" : "java.util.HashMap"
-          },
-          "functions" : {
-            "@class" : "java.util.HashMap"
-          }
-        },
-        "parameters" : [ "java.util.ArrayList", [ {
-          "@class" : "org.easycompiler.ast.Property",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 3,
-          "typeName" : "string",
+    "@type" : "Block",
+    "statements" : [ {
+      "@type" : "Definition",
+      "definedType" : {
+        "@type" : "Function",
+        "title" : "print",
+        "parameters" : [ {
+          "@type" : "Property",
           "title" : "text",
-          "value" : null
-        } ] ],
+          "typeName" : "String",
+          "defaultValue" : null,
+          "line" : 3
+        } ],
         "statements" : {
-          "@class" : "org.easycompiler.ast.Block",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 4,
-          "typeName" : null,
-          "statements" : [ "java.util.ArrayList", [ {
-            "@class" : "org.easycompiler.ast.Assignment",
-            "errors" : [ "java.util.ArrayList", [ ] ],
-            "line" : 5,
-            "typeName" : null,
+          "@type" : "Block",
+          "statements" : [ {
+            "@type" : "Assignment",
             "to" : {
-              "@class" : "org.easycompiler.ast.Identifier",
-              "errors" : [ "java.util.ArrayList", [ ] ],
-              "line" : 5,
+              "@type" : "Identifier",
+              "title" : "text",
               "typeName" : null,
-              "title" : "text"
+              "line" : 5
             },
             "from" : {
-              "@class" : "org.easycompiler.ast.Value",
-              "errors" : [ "java.util.ArrayList", [ ] ],
-              "line" : 5,
-              "typeName" : "string",
-              "value" : ""
-            }
-          } ] ]
+              "@type" : "Value",
+              "value" : "",
+              "typeName" : "String",
+              "line" : 5
+            },
+            "line" : 5
+          } ],
+          "line" : 4,
+          "scope" : {
+            "@type" : "SymbolTable",
+            "variables" : { },
+            "types" : { },
+            "functions" : { }
+          }
         },
-        "returnType" : {
-          "@class" : "org.easycompiler.type.Str",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "title" : "string"
+        "returnTypeName" : "String",
+        "scope" : {
+          "@type" : "SymbolTable",
+          "variables" : { },
+          "types" : { },
+          "functions" : { }
         }
-      }
-    } ] ]
-  }
+      },
+      "line" : 3
+    } ],
+    "line" : 3,
+    "scope" : {
+      "@type" : "SymbolTable",
+      "variables" : { },
+      "types" : { },
+      "functions" : { }
+    }
+  },
+  "line" : 3,
+  "scope" : null
 }

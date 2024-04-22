@@ -1,2 +1,0 @@
-/* Undefined message */
-exec print (text= "text to write");

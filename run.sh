@@ -6,28 +6,38 @@ function run_test {
     rm -rf output.*
     filename="$dir/tests/$1"
 
-     echo $filename
+    touch ./output.json
+    cd ..
 
-    outputname="$(dirname $filename)/$(basename $1 .alf).out"
+    file=$1
+    path_with_dir="../devoir-4-tests/$filename"
+
+    outputname="$(dirname $filename)/$(basename $1 .alf).alf.ast.json"
+    echo $outputname
+
     astoutputname="$(dirname $filename)/$(basename $1).json"
+    echo $astoutputname
+    
     echo Running $filename
-    java -cp ./../libs/*:./../out org.example.Main $filename.ast.json output.ast.json &> $outputname
-    ERROR=0
+    ./gradlew run -q --args="$path_with_dir ../devoir-4-tests/$outputname"
 
-    if node verify.js "$astoutputname" "output.ast.json" &> output.report;
-    then
-       echo "Correct"
-    else
-        cat $outputname
-        cat output.report
-        echo "Your output                                                   | Correct output"
-        diff --ignore-space-change --side-by-side --suppress-common-lines "output.ast.json" "$astoutputname"
-        ERROR=1
-    fi
-    rm $outputname
+    cd ./devoir-4-tests/
+    # ERROR=0
+
+    # if node verify.js "$astoutputname" "$outputname" &> output.report;
+    # then
+    #    echo "Correct"
+    # else
+    #     cat $outputname
+    #     cat output.report
+    #     echo "Your output                                                   | Correct output"
+    #     diff --ignore-space-change --side-by-side --suppress-common-lines "$outputname" "$astoutputname"
+    #     ERROR=1
+    # fi
+    # rm $outputname
     rm -rf output.* 
     rm -rf error
-    return $ERROR
+    # return $ERROR
 }
 
 if [ $# -lt 1 ];

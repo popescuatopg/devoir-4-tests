@@ -1,71 +1,51 @@
 {
-  "@class" : "org.easycompiler.ast.Module",
-  "errors" : [ "java.util.ArrayList", [ ] ],
-  "line" : 3,
-  "typeName" : null,
-  "symbolTable" : {
-    "@class" : "org.easycompiler.semantic.SymbolTable",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "variables" : {
-      "@class" : "java.util.HashMap"
-    },
-    "types" : {
-      "@class" : "java.util.HashMap"
-    },
-    "functions" : {
-      "@class" : "java.util.HashMap"
-    }
-  },
-  "title" : "program",
+  "@type" : "Module",
   "block" : {
-    "@class" : "org.easycompiler.ast.Block",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "line" : 3,
-    "typeName" : null,
-    "statements" : [ "java.util.ArrayList", [ {
-      "@class" : "org.easycompiler.ast.Group",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 3,
-      "typeName" : null,
-      "nodes" : [ "java.util.ArrayList", [ {
-        "@class" : "org.easycompiler.ast.VariableDefinition",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "line" : 3,
-        "typeName" : "string",
-        "title" : "v",
-        "initial" : null,
-        "type" : {
-          "@class" : "org.easycompiler.type.Str",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "title" : "string"
-        }
-      } ] ]
-    }, {
-      "@class" : "org.easycompiler.ast.Assignment",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 5,
-      "typeName" : null,
-      "to" : {
-        "@class" : "org.easycompiler.ast.StructElement",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "line" : 5,
-        "typeName" : null,
-        "struct" : {
-          "@class" : "org.easycompiler.ast.Identifier",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 5,
-          "typeName" : null,
-          "title" : "v"
+    "@type" : "Block",
+    "statements" : [ {
+      "@type" : "Group",
+      "declarations" : [ {
+        "@type" : "VariableDefinition",
+        "variable" : {
+          "@type" : "Identifier",
+          "title" : "v",
+          "typeName" : "String",
+          "line" : 3
         },
-        "property" : "t"
+        "init" : null,
+        "line" : 3
+      } ],
+      "line" : 3
+    }, {
+      "@type" : "Assignment",
+      "to" : {
+        "@type" : "StructElement",
+        "struct" : {
+          "@type" : "Identifier",
+          "title" : "v",
+          "typeName" : null,
+          "line" : 5
+        },
+        "field" : "t",
+        "typeName" : null,
+        "line" : 5
       },
       "from" : {
-        "@class" : "org.easycompiler.ast.Value",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "line" : 5,
-        "typeName" : "string",
-        "value" : "some text"
-      }
-    } ] ]
-  }
+        "@type" : "Value",
+        "value" : "some text",
+        "typeName" : "String",
+        "line" : 5
+      },
+      "line" : 5
+    } ],
+    "line" : 3,
+    "scope" : {
+      "@type" : "SymbolTable",
+      "variables" : { },
+      "types" : { },
+      "functions" : { }
+    }
+  },
+  "line" : 3,
+  "scope" : null
 }

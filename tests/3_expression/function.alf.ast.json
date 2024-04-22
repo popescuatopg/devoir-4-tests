@@ -1,104 +1,75 @@
 {
-  "@class" : "org.easycompiler.ast.Module",
-  "errors" : [ "java.util.ArrayList", [ ] ],
-  "line" : 3,
-  "typeName" : null,
-  "symbolTable" : {
-    "@class" : "org.easycompiler.semantic.SymbolTable",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "variables" : {
-      "@class" : "java.util.HashMap"
-    },
-    "types" : {
-      "@class" : "java.util.HashMap"
-    },
-    "functions" : {
-      "@class" : "java.util.HashMap"
-    }
-  },
-  "title" : "program",
+  "@type" : "Module",
   "block" : {
-    "@class" : "org.easycompiler.ast.Block",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "line" : 3,
-    "typeName" : null,
-    "statements" : [ "java.util.ArrayList", [ {
-      "@class" : "org.easycompiler.ast.Definition",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 3,
-      "typeName" : "number",
-      "title" : "number",
-      "type" : {
-        "@class" : "org.easycompiler.type.Function",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "title" : null,
-        "symbolTable" : {
-          "@class" : "org.easycompiler.semantic.SymbolTable",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "variables" : {
-            "@class" : "java.util.HashMap"
-          },
-          "types" : {
-            "@class" : "java.util.HashMap"
-          },
-          "functions" : {
-            "@class" : "java.util.HashMap"
+    "@type" : "Block",
+    "statements" : [ {
+      "@type" : "Definition",
+      "definedType" : {
+        "@type" : "Function",
+        "title" : "number",
+        "parameters" : [ ],
+        "statements" : {
+          "@type" : "Block",
+          "statements" : [ {
+            "@type" : "Return",
+            "expression" : {
+              "@type" : "Value",
+              "value" : "3",
+              "typeName" : "I64",
+              "line" : 3
+            },
+            "typeName" : "I64",
+            "line" : 3
+          } ],
+          "line" : 3,
+          "scope" : {
+            "@type" : "SymbolTable",
+            "variables" : { },
+            "types" : { },
+            "functions" : { }
           }
         },
-        "parameters" : null,
-        "statements" : {
-          "@class" : "org.easycompiler.ast.Block",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 3,
-          "typeName" : null,
-          "statements" : [ "java.util.ArrayList", [ {
-            "@class" : "org.easycompiler.ast.Return",
-            "errors" : [ "java.util.ArrayList", [ ] ],
-            "line" : 3,
-            "typeName" : null,
-            "value" : {
-              "@class" : "org.easycompiler.ast.Value",
-              "errors" : [ "java.util.ArrayList", [ ] ],
-              "line" : 3,
-              "typeName" : "integer",
-              "value" : "3"
-            }
-          } ] ]
-        },
-        "returnType" : {
-          "@class" : "org.easycompiler.type.Integer",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "title" : "integer",
-          "type" : "I64"
+        "returnTypeName" : "I64",
+        "scope" : {
+          "@type" : "SymbolTable",
+          "variables" : { },
+          "types" : { },
+          "functions" : { }
         }
-      }
+      },
+      "line" : 3
     }, {
-      "@class" : "org.easycompiler.ast.BinaryExpression",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 5,
-      "typeName" : null,
+      "@type" : "BinaryExpression",
       "left" : {
-        "@class" : "org.easycompiler.ast.Value",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "line" : 5,
-        "typeName" : "integer",
-        "value" : "2"
+        "@type" : "Value",
+        "value" : "2",
+        "typeName" : "I64",
+        "line" : 5
       },
       "right" : {
-        "@class" : "org.easycompiler.ast.FunctionCall",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "line" : 5,
-        "typeName" : null,
-        "function_name" : {
-          "@class" : "org.easycompiler.ast.Identifier",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 5,
+        "@type" : "FunctionCall",
+        "function" : {
+          "@type" : "Identifier",
+          "title" : "number",
           "typeName" : null,
-          "title" : "number"
+          "line" : 5
         },
-        "arguments" : [ "java.util.ArrayList", [ ] ]
+        "parameters" : [ ],
+        "typeName" : null,
+        "line" : 5
       },
-      "op" : "ADD"
-    } ] ]
-  }
+      "op" : "ADD",
+      "typeName" : null,
+      "line" : 5
+    } ],
+    "line" : 3,
+    "scope" : {
+      "@type" : "SymbolTable",
+      "variables" : { },
+      "types" : { },
+      "functions" : { }
+    }
+  },
+  "line" : 3,
+  "scope" : null
 }
