@@ -29,13 +29,7 @@
             "functions" : { }
           }
         },
-        "returnTypeName" : "String",
-        "scope" : {
-          "@type" : "SymbolTable",
-          "variables" : { },
-          "types" : { },
-          "functions" : { }
-        }
+        "returnTypeName" : "String"
       },
       "line" : 3
     } ],
@@ -47,6 +41,5 @@
       "functions" : { }
     }
   },
-  "line" : 3,
-  "scope" : null
+  "line" : 3
 }

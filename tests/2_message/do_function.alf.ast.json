@@ -25,13 +25,7 @@
             "functions" : { }
           }
         },
-        "returnTypeName" : "String",
-        "scope" : {
-          "@type" : "SymbolTable",
-          "variables" : { },
-          "types" : { },
-          "functions" : { }
-        }
+        "returnTypeName" : "String"
       },
       "line" : 2
     }, {
@@ -59,6 +53,5 @@
       "functions" : { }
     }
   },
-  "line" : 2,
-  "scope" : null
+  "line" : 2
 }

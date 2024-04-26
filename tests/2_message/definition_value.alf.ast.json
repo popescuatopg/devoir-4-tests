@@ -72,13 +72,7 @@
             "functions" : { }
           }
         },
-        "returnTypeName" : "I64",
-        "scope" : {
-          "@type" : "SymbolTable",
-          "variables" : { },
-          "types" : { },
-          "functions" : { }
-        }
+        "returnTypeName" : "I64"
       },
       "line" : 4
     } ],
@@ -90,6 +84,5 @@
       "functions" : { }
     }
   },
-  "line" : 4,
-  "scope" : null
+  "line" : 4
 }

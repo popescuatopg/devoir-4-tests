@@ -168,13 +168,7 @@
             "functions" : { }
           }
         },
-        "returnTypeName" : "F64",
-        "scope" : {
-          "@type" : "SymbolTable",
-          "variables" : { },
-          "types" : { },
-          "functions" : { }
-        }
+        "returnTypeName" : "F64"
       },
       "line" : 3
     }, {
@@ -207,6 +201,5 @@
       "functions" : { }
     }
   },
-  "line" : 3,
-  "scope" : null
+  "line" : 3
 }
