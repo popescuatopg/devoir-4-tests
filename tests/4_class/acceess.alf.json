@@ -1,88 +1,75 @@
 {
-  "@class" : "org.easycompiler.ast.Module",
-  "errors" : [ "java.util.ArrayList", [ ] ],
-  "line" : 2,
-  "typeName" : null,
-  "symbolTable" : {
-    "@class" : "org.easycompiler.semantic.SymbolTable",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "variables" : {
-      "@class" : "java.util.HashMap",
-      "s" : "school",
-      "school" : "school"
-    },
-    "types" : {
-      "@class" : "java.util.HashMap",
-      "school" : {
-        "@class" : "org.easycompiler.type.Struct",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "title" : "school",
-        "properties" : [ "java.util.ArrayList", [ {
-          "@class" : "org.easycompiler.ast.Property",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 3,
-          "typeName" : "string",
-          "title" : "name",
-          "value" : null
-        }, {
-          "@class" : "org.easycompiler.ast.Property",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 4,
-          "typeName" : "boolean",
-          "title" : "private",
-          "value" : null
-        }, {
-          "@class" : "org.easycompiler.ast.Property",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 5,
-          "typeName" : "integer",
-          "title" : "type",
-          "value" : null
-        } ] ]
-      }
-    },
-    "functions" : {
-      "@class" : "java.util.HashMap"
-    }
-  },
-  "title" : "program",
+  "@type" : "Module",
   "block" : {
-    "@class" : "org.easycompiler.ast.Block",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "line" : 2,
-    "typeName" : null,
-    "statements" : [ "java.util.ArrayList", [ {
-      "@class" : "org.easycompiler.ast.Group",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 8,
-      "typeName" : null,
-      "nodes" : [ "java.util.ArrayList", [ ] ]
-    }, {
-      "@class" : "org.easycompiler.ast.Assignment",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 10,
-      "typeName" : null,
+    "@type" : "Block",
+    "statements" : [ {
+      "@type" : "Assignment",
       "to" : {
-        "@class" : "org.easycompiler.ast.StructElement",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "line" : 10,
-        "typeName" : "string",
+        "@type" : "StructElement",
         "struct" : {
-          "@class" : "org.easycompiler.ast.Identifier",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 10,
+          "@type" : "Identifier",
+          "title" : "s",
           "typeName" : "school",
-          "title" : "s"
+          "line" : 10
         },
-        "property" : "name"
+        "field" : "name",
+        "typeName" : "String",
+        "line" : 10
       },
       "from" : {
-        "@class" : "org.easycompiler.ast.Value",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "line" : 10,
-        "typeName" : "string",
-        "value" : "The new name for the school"
-      }
-    } ] ]
-  }
+        "@type" : "Value",
+        "value" : "The new name for the school",
+        "typeName" : "String",
+        "line" : 10
+      },
+      "line" : 10
+    } ],
+    "line" : 2,
+    "scope" : {
+      "@type" : "SymbolTable",
+      "variables" : {
+        "s" : "school"
+      },
+      "types" : {
+        "String" : {
+          "@type" : "Str",
+          "title" : "String"
+        },
+        "Boolean" : {
+          "@type" : "Boolean",
+          "title" : "Boolean"
+        },
+        "school" : {
+          "@type" : "Struct",
+          "title" : "school",
+          "properties" : [ {
+            "@type" : "Property",
+            "title" : "name",
+            "typeName" : "String",
+            "defaultValue" : null,
+            "line" : 3
+          }, {
+            "@type" : "Property",
+            "title" : "private",
+            "typeName" : "Boolean",
+            "defaultValue" : null,
+            "line" : 4
+          }, {
+            "@type" : "Property",
+            "title" : "type",
+            "typeName" : "I64",
+            "defaultValue" : null,
+            "line" : 5
+          } ]
+        },
+        "I64" : {
+          "@type" : "Integer",
+          "itype" : "I64",
+          "title" : "I64"
+        }
+      },
+      "functions" : { }
+    }
+  },
+  "line" : 2
 }

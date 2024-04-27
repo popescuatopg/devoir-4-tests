@@ -1,34 +1,21 @@
 {
-  "@class" : "org.easycompiler.ast.Module",
-  "errors" : [ "java.util.ArrayList", [ ] ],
-  "line" : 3,
-  "typeName" : null,
-  "symbolTable" : {
-    "@class" : "org.easycompiler.semantic.SymbolTable",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "variables" : {
-      "@class" : "java.util.HashMap",
-      "product" : "product"
-    },
-    "types" : {
-      "@class" : "java.util.HashMap",
-      "product" : {
-        "@class" : "org.easycompiler.type.Struct",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "title" : "product",
-        "properties" : [ "java.util.ArrayList", [ ] ]
-      }
-    },
-    "functions" : {
-      "@class" : "java.util.HashMap"
+  "@type" : "Module",
+  "block" : {
+    "@type" : "Block",
+    "statements" : [ ],
+    "line" : 3,
+    "scope" : {
+      "@type" : "SymbolTable",
+      "variables" : { },
+      "types" : {
+        "product" : {
+          "@type" : "Struct",
+          "title" : "product",
+          "properties" : [ ]
+        }
+      },
+      "functions" : { }
     }
   },
-  "title" : "program",
-  "block" : {
-    "@class" : "org.easycompiler.ast.Block",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "line" : 3,
-    "typeName" : null,
-    "statements" : [ "java.util.ArrayList", [ ] ]
-  }
+  "line" : 3
 }

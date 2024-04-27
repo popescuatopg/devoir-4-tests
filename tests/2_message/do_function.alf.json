@@ -1,90 +1,62 @@
 {
-  "@class" : "org.easycompiler.ast.Module",
-  "errors" : [ "java.util.ArrayList", [ ] ],
-  "line" : 2,
-  "typeName" : null,
-  "symbolTable" : {
-    "@class" : "org.easycompiler.semantic.SymbolTable",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "variables" : {
-      "@class" : "java.util.HashMap"
-    },
-    "types" : {
-      "@class" : "java.util.HashMap"
-    },
-    "functions" : {
-      "@class" : "java.util.HashMap",
-      "print" : {
-        "@class" : "org.easycompiler.type.Function",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "title" : null,
-        "symbolTable" : {
-          "@class" : "org.easycompiler.semantic.SymbolTable",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "variables" : {
-            "@class" : "java.util.HashMap",
-            "text" : "string"
-          },
-          "types" : {
-            "@class" : "java.util.HashMap",
-            "string" : {
-              "@class" : "org.easycompiler.type.Str",
-              "errors" : [ "java.util.ArrayList", [ ] ],
-              "title" : "string"
+  "@type" : "Module",
+  "block" : {
+    "@type" : "Block",
+    "statements" : [ {
+      "@type" : "FunctionCall",
+      "function" : {
+        "@type" : "Identifier",
+        "title" : "print",
+        "typeName" : "String",
+        "line" : 3
+      },
+      "parameters" : [ {
+        "@type" : "Value",
+        "value" : "text to write",
+        "typeName" : "String",
+        "line" : 3
+      } ],
+      "typeName" : "String",
+      "line" : 3
+    } ],
+    "line" : 2,
+    "scope" : {
+      "@type" : "SymbolTable",
+      "variables" : { },
+      "types" : {
+        "String" : {
+          "@type" : "Str",
+          "title" : "String"
+        }
+      },
+      "functions" : {
+        "print" : {
+          "@type" : "Function",
+          "title" : "print",
+          "parameters" : [ {
+            "@type" : "Property",
+            "title" : "text",
+            "typeName" : "String",
+            "defaultValue" : null,
+            "line" : 2
+          } ],
+          "statements" : {
+            "@type" : "Block",
+            "statements" : [ ],
+            "line" : 2,
+            "scope" : {
+              "@type" : "SymbolTable",
+              "variables" : {
+                "text" : "String"
+              },
+              "types" : { },
+              "functions" : { }
             }
           },
-          "functions" : {
-            "@class" : "java.util.HashMap"
-          }
-        },
-        "parameters" : [ "java.util.ArrayList", [ {
-          "@class" : "org.easycompiler.ast.Property",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 2,
-          "typeName" : "string",
-          "title" : "text",
-          "value" : null
-        } ] ],
-        "statements" : {
-          "@class" : "org.easycompiler.ast.Block",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 2,
-          "typeName" : null,
-          "statements" : [ "java.util.ArrayList", [ ] ]
-        },
-        "returnType" : {
-          "@class" : "org.easycompiler.type.Str",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "title" : "string"
+          "returnTypeName" : "String"
         }
       }
     }
   },
-  "title" : "program",
-  "block" : {
-    "@class" : "org.easycompiler.ast.Block",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "line" : 2,
-    "typeName" : null,
-    "statements" : [ "java.util.ArrayList", [ {
-      "@class" : "org.easycompiler.ast.FunctionCall",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 3,
-      "typeName" : "string",
-      "function_name" : {
-        "@class" : "org.easycompiler.ast.Identifier",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "line" : 3,
-        "typeName" : "print",
-        "title" : "print"
-      },
-      "arguments" : [ "java.util.ArrayList", [ {
-        "@class" : "org.easycompiler.ast.Value",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "line" : 3,
-        "typeName" : "string",
-        "value" : "text to write"
-      } ] ]
-    } ] ]
-  }
+  "line" : 2
 }

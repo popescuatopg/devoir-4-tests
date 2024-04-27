@@ -1,38 +1,39 @@
 {
-  "@class" : "org.easycompiler.ast.Module",
-  "errors" : [ "java.util.ArrayList", [ ] ],
-  "line" : 3,
-  "typeName" : null,
-  "symbolTable" : {
-    "@class" : "org.easycompiler.semantic.SymbolTable",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "variables" : {
-      "@class" : "java.util.HashMap"
-    },
-    "types" : {
-      "@class" : "java.util.HashMap",
-      "info" : {
-        "@class" : "org.easycompiler.type.Array",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "title" : "info",
-        "type" : {
-          "@class" : "org.easycompiler.type.Str",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "title" : "string"
-        },
-        "length" : 8
-      }
-    },
-    "functions" : {
-      "@class" : "java.util.HashMap"
+  "@type" : "Module",
+  "block" : {
+    "@type" : "Block",
+    "statements" : [ ],
+    "line" : 3,
+    "scope" : {
+      "@type" : "SymbolTable",
+      "variables" : { },
+      "types" : {
+        "info" : {
+          "@type" : "Array",
+          "title" : "info",
+          "typeName" : "String",
+          "length" : {
+            "@type" : "BinaryExpression",
+            "left" : {
+              "@type" : "Value",
+              "value" : "9",
+              "typeName" : "I64",
+              "line" : 3
+            },
+            "right" : {
+              "@type" : "Value",
+              "value" : "1",
+              "typeName" : "I64",
+              "line" : 3
+            },
+            "op" : "SUB",
+            "typeName" : "I64",
+            "line" : 3
+          }
+        }
+      },
+      "functions" : { }
     }
   },
-  "title" : "program",
-  "block" : {
-    "@class" : "org.easycompiler.ast.Block",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "line" : 3,
-    "typeName" : null,
-    "statements" : [ "java.util.ArrayList", [ ] ]
-  }
+  "line" : 3
 }

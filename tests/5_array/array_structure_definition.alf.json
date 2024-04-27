@@ -1,95 +1,64 @@
 {
-  "@class" : "org.easycompiler.ast.Module",
-  "errors" : [ "java.util.ArrayList", [ ] ],
-  "line" : 3,
-  "typeName" : null,
-  "symbolTable" : {
-    "@class" : "org.easycompiler.semantic.SymbolTable",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "variables" : {
-      "@class" : "java.util.HashMap",
-      "school" : "school",
-      "list_of_schools" : "school_array"
-    },
-    "types" : {
-      "@class" : "java.util.HashMap",
-      "school_array" : {
-        "@class" : "org.easycompiler.type.Array",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "title" : "school_array",
-        "type" : {
-          "@class" : "org.easycompiler.type.Struct",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "title" : "school",
-          "properties" : [ "java.util.ArrayList", [ {
-            "@class" : "org.easycompiler.ast.Property",
-            "errors" : [ "java.util.ArrayList", [ ] ],
-            "line" : 4,
-            "typeName" : "string",
-            "title" : "name",
-            "value" : null
-          }, {
-            "@class" : "org.easycompiler.ast.Property",
-            "errors" : [ "java.util.ArrayList", [ ] ],
-            "line" : 5,
-            "typeName" : "boolean",
-            "title" : "private",
-            "value" : null
-          }, {
-            "@class" : "org.easycompiler.ast.Property",
-            "errors" : [ "java.util.ArrayList", [ ] ],
-            "line" : 6,
-            "typeName" : "integer",
-            "title" : "type",
-            "value" : null
-          } ] ]
-        },
-        "length" : 8
+  "@type" : "Module",
+  "block" : {
+    "@type" : "Block",
+    "statements" : [ ],
+    "line" : 3,
+    "scope" : {
+      "@type" : "SymbolTable",
+      "variables" : {
+        "list_of_schools" : "school_array"
       },
-      "school" : {
-        "@class" : "org.easycompiler.type.Struct",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "title" : "school",
-        "properties" : [ "java.util.ArrayList", [ {
-          "@class" : "org.easycompiler.ast.Property",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 4,
-          "typeName" : "string",
-          "title" : "name",
-          "value" : null
-        }, {
-          "@class" : "org.easycompiler.ast.Property",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 5,
-          "typeName" : "boolean",
-          "title" : "private",
-          "value" : null
-        }, {
-          "@class" : "org.easycompiler.ast.Property",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "line" : 6,
-          "typeName" : "integer",
-          "title" : "type",
-          "value" : null
-        } ] ]
-      }
-    },
-    "functions" : {
-      "@class" : "java.util.HashMap"
+      "types" : {
+        "school" : {
+          "@type" : "Struct",
+          "title" : "school",
+          "properties" : [ {
+            "@type" : "Property",
+            "title" : "name",
+            "typeName" : "String",
+            "defaultValue" : null,
+            "line" : 4
+          }, {
+            "@type" : "Property",
+            "title" : "private",
+            "typeName" : "Boolean",
+            "defaultValue" : null,
+            "line" : 5
+          }, {
+            "@type" : "Property",
+            "title" : "type",
+            "typeName" : "I64",
+            "defaultValue" : null,
+            "line" : 6
+          } ]
+        },
+        "school_array" : {
+          "@type" : "Array",
+          "title" : "school_array",
+          "typeName" : "school",
+          "length" : {
+            "@type" : "BinaryExpression",
+            "left" : {
+              "@type" : "Value",
+              "value" : "9",
+              "typeName" : "I64",
+              "line" : 9
+            },
+            "right" : {
+              "@type" : "Value",
+              "value" : "1",
+              "typeName" : "I64",
+              "line" : 9
+            },
+            "op" : "SUB",
+            "typeName" : "I64",
+            "line" : 9
+          }
+        }
+      },
+      "functions" : { }
     }
   },
-  "title" : "program",
-  "block" : {
-    "@class" : "org.easycompiler.ast.Block",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "line" : 3,
-    "typeName" : null,
-    "statements" : [ "java.util.ArrayList", [ {
-      "@class" : "org.easycompiler.ast.Group",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 11,
-      "typeName" : null,
-      "nodes" : [ "java.util.ArrayList", [ ] ]
-    } ] ]
-  }
+  "line" : 3
 }

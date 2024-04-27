@@ -1,43 +1,4 @@
-{
-  "@class" : "org.easycompiler.ast.Module",
-  "errors" : [ "java.util.ArrayList", [ ] ],
-  "line" : 4,
-  "typeName" : null,
-  "symbolTable" : {
-    "@class" : "org.easycompiler.semantic.SymbolTable",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "variables" : {
-      "@class" : "java.util.HashMap"
-    },
-    "types" : {
-      "@class" : "java.util.HashMap"
-    },
-    "functions" : {
-      "@class" : "java.util.HashMap"
-    }
-  },
-  "title" : "program",
-  "block" : {
-    "@class" : "org.easycompiler.ast.Block",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "line" : 4,
-    "typeName" : null,
-    "statements" : [ "java.util.ArrayList", [ {
-      "@class" : "org.easycompiler.ast.UnaryExpression",
-      "errors" : [ "java.util.ArrayList", [ {
-        "@class" : "org.easycompiler.semantic.SemanticError",
-        "type" : "TYPE_MISMATCH"
-      } ] ],
-      "line" : 4,
-      "typeName" : null,
-      "expression" : {
-        "@class" : "org.easycompiler.ast.Value",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "line" : 4,
-        "typeName" : "integer",
-        "value" : "90"
-      },
-      "op" : "NOT"
-    } ] ]
-  }
-}
+[ {
+  "type" : "TYPE_MISMATCH",
+  "line" : 4
+} ]

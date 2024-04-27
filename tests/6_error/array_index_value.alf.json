@@ -1,47 +1,39 @@
 {
-  "@class" : "org.easycompiler.ast.Module",
-  "errors" : [ "java.util.ArrayList", [ ] ],
-  "line" : 3,
-  "typeName" : null,
-  "symbolTable" : {
-    "@class" : "org.easycompiler.semantic.SymbolTable",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "variables" : {
-      "@class" : "java.util.HashMap"
-    },
-    "types" : {
-      "@class" : "java.util.HashMap"
-    },
-    "functions" : {
-      "@class" : "java.util.HashMap"
+  "@type" : "Module",
+  "block" : {
+    "@type" : "Block",
+    "statements" : [ ],
+    "line" : 3,
+    "scope" : {
+      "@type" : "SymbolTable",
+      "variables" : { },
+      "types" : {
+        "a" : {
+          "@type" : "Array",
+          "title" : "a",
+          "typeName" : "String",
+          "length" : {
+            "@type" : "BinaryExpression",
+            "left" : {
+              "@type" : "Value",
+              "value" : "45",
+              "typeName" : "I64",
+              "line" : 3
+            },
+            "right" : {
+              "@type" : "Value",
+              "value" : "90",
+              "typeName" : "I64",
+              "line" : 3
+            },
+            "op" : "SUB",
+            "typeName" : "I64",
+            "line" : 3
+          }
+        }
+      },
+      "functions" : { }
     }
   },
-  "title" : "program",
-  "block" : {
-    "@class" : "org.easycompiler.ast.Block",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "line" : 3,
-    "typeName" : null,
-    "statements" : [ "java.util.ArrayList", [ {
-      "@class" : "org.easycompiler.ast.Definition",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 3,
-      "typeName" : "a",
-      "title" : "a",
-      "type" : {
-        "@class" : "org.easycompiler.type.Array",
-        "errors" : [ "java.util.ArrayList", [ {
-          "@class" : "org.easycompiler.semantic.SemanticError",
-          "type" : "ARRAY_INDEX_VALUE"
-        } ] ],
-        "title" : "a",
-        "type" : {
-          "@class" : "org.easycompiler.type.Str",
-          "errors" : [ "java.util.ArrayList", [ ] ],
-          "title" : "string"
-        },
-        "length" : -45
-      }
-    } ] ]
-  }
+  "line" : 3
 }

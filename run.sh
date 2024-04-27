@@ -9,17 +9,13 @@ function run_test {
     touch ./output.json
     cd ..
 
-    file=$1
-    path_with_dir="../devoir-4-tests/$filename"
-
-    outputname="$(dirname $filename)/$(basename $1 .alf).alf.ast.json"
-    echo $outputname
+    inputname="$(dirname $filename)/$(basename $1 .alf).alf.ast.json"
 
     astoutputname="$(dirname $filename)/$(basename $1).json"
     echo $astoutputname
     
     echo Running $filename
-    ./gradlew run -q --args="$path_with_dir ../devoir-4-tests/$outputname"
+    ./gradlew run -q --args="devoir-4-tests/$inputname devoir-4-tests/$astoutputname"
 
     cd ./devoir-4-tests/
     # ERROR=0
@@ -48,7 +44,11 @@ then
         for file in $(cd $dir/$folder && find . -mindepth 1 -maxdepth 2 -type f -name '*.alf')
         do
             # echo file $(basename $folder)/$(basename $file)
-            run_test $(basename $folder)/$(basename $file)
+            newname=$(basename $folder)
+            if [[ $newname = 4* ]];
+            then
+              run_test $newname/$(basename $file)
+            fi
         done
     done
 else

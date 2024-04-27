@@ -5,5 +5,5 @@ class s
 end;
 
 class s 
-	local strinf title;
+	local string title;
 end;

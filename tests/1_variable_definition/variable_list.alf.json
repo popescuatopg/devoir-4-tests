@@ -1,59 +1,39 @@
 {
-  "@class" : "org.easycompiler.ast.Module",
-  "errors" : [ "java.util.ArrayList", [ ] ],
-  "line" : 2,
-  "typeName" : null,
-  "symbolTable" : {
-    "@class" : "org.easycompiler.semantic.SymbolTable",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "variables" : {
-      "@class" : "java.util.HashMap",
-      "r" : "float",
-      "s" : "string",
-      "l" : "boolean",
-      "n" : "integer"
-    },
-    "types" : {
-      "@class" : "java.util.HashMap",
-      "boolean" : {
-        "@class" : "org.easycompiler.type.Boolean",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "title" : "boolean"
+  "@type" : "Module",
+  "block" : {
+    "@type" : "Block",
+    "statements" : [ ],
+    "line" : 2,
+    "scope" : {
+      "@type" : "SymbolTable",
+      "variables" : {
+        "r" : "F64",
+        "s" : "String",
+        "l" : "Boolean",
+        "n" : "I64"
       },
-      "string" : {
-        "@class" : "org.easycompiler.type.Str",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "title" : "string"
+      "types" : {
+        "String" : {
+          "@type" : "Str",
+          "title" : "String"
+        },
+        "Boolean" : {
+          "@type" : "Boolean",
+          "title" : "Boolean"
+        },
+        "F64" : {
+          "@type" : "Float",
+          "ftype" : "F64",
+          "title" : "F64"
+        },
+        "I64" : {
+          "@type" : "Integer",
+          "itype" : "I64",
+          "title" : "I64"
+        }
       },
-      "integer" : {
-        "@class" : "org.easycompiler.type.Integer",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "title" : "integer",
-        "type" : "I64"
-      },
-      "float" : {
-        "@class" : "org.easycompiler.type.Float",
-        "errors" : [ "java.util.ArrayList", [ ] ],
-        "title" : "float",
-        "type" : "F64"
-      }
-    },
-    "functions" : {
-      "@class" : "java.util.HashMap"
+      "functions" : { }
     }
   },
-  "title" : "program",
-  "block" : {
-    "@class" : "org.easycompiler.ast.Block",
-    "errors" : [ "java.util.ArrayList", [ ] ],
-    "line" : 2,
-    "typeName" : null,
-    "statements" : [ "java.util.ArrayList", [ {
-      "@class" : "org.easycompiler.ast.Group",
-      "errors" : [ "java.util.ArrayList", [ ] ],
-      "line" : 2,
-      "typeName" : null,
-      "nodes" : [ "java.util.ArrayList", [ ] ]
-    } ] ]
-  }
+  "line" : 2
 }
