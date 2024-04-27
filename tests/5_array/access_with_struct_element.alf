@@ -2,7 +2,7 @@
 
 string array details[1:9];
 
-declare v = details;
+declare details v;
 
 class random
 	local integer position;

@@ -35,15 +35,10 @@
         "variable" : {
           "@type" : "Identifier",
           "title" : "v",
-          "typeName" : null,
+          "typeName" : "details",
           "line" : 5
         },
-        "init" : {
-          "@type" : "Identifier",
-          "title" : "details",
-          "typeName" : null,
-          "line" : 5
-        },
+        "init" : null,
         "line" : 5
       } ],
       "line" : 5

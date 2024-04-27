@@ -10,7 +10,17 @@
         "parameters" : [ ],
         "statements" : {
           "@type" : "Block",
-          "statements" : [ ],
+          "statements" : [ {
+            "@type" : "Return",
+            "expression" : {
+              "@type" : "Value",
+              "value" : "2",
+              "typeName" : "I64",
+              "line" : 2
+            },
+            "typeName" : "I64",
+            "line" : 2
+          } ],
           "line" : 2,
           "scope" : {
             "@type" : "SymbolTable",
