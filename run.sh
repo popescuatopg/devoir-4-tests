@@ -9,31 +9,32 @@ function run_test {
     touch ./output.json
     cd ..
 
-    inputname="$(dirname $filename)/$(basename $1 .alf).alf.ast.json"
-
+    inputname="$(dirname $filename)/$(basename $1).ast.json"
+    outputname="$(dirname $filename)/$(basename $1 .alf).json"
+    echo $outputname
     astoutputname="$(dirname $filename)/$(basename $1).json"
     echo $astoutputname
     
     echo Running $filename
-    ./gradlew run -q --args="devoir-4-tests/$inputname devoir-4-tests/$astoutputname"
+    ./gradlew run -q --args="../devoir-4-tests/$inputname ../devoir-4-tests/$outputname"
 
     cd ./devoir-4-tests/
-    # ERROR=0
+     ERROR=0
 
-    # if node verify.js "$astoutputname" "$outputname" &> output.report;
-    # then
-    #    echo "Correct"
-    # else
-    #     cat $outputname
-    #     cat output.report
-    #     echo "Your output                                                   | Correct output"
-    #     diff --ignore-space-change --side-by-side --suppress-common-lines "$outputname" "$astoutputname"
-    #     ERROR=1
-    # fi
-    # rm $outputname
-    rm -rf output.* 
+     if node verify.js "$astoutputname" "$outputname" &> output.report;
+     then
+        echo "Correct"
+     else
+         cat $outputname
+         cat output.report
+         echo "Your output                                                   | Correct output"
+         diff --ignore-space-change --side-by-side --suppress-common-lines "$outputname" "$astoutputname"
+         ERROR=1
+     fi
+     rm $outputname
+    rm -rf output.*
     rm -rf error
-    # return $ERROR
+     return $ERROR
 }
 
 if [ $# -lt 1 ];
@@ -45,10 +46,11 @@ then
         do
             # echo file $(basename $folder)/$(basename $file)
             newname=$(basename $folder)
-            if [[ $newname = 4* ]];
-            then
-              run_test $newname/$(basename $file)
-            fi
+            run_test $newname/$(basename $file)
+#            if [[ $newname = 4* ]];
+#            then
+#
+#            fi
         done
     done
 else

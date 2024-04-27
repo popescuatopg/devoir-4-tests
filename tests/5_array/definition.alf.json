@@ -8,6 +8,10 @@
       "@type" : "SymbolTable",
       "variables" : { },
       "types" : {
+        "String" : {
+          "@type" : "Str",
+          "title" : "String"
+        },
         "info" : {
           "@type" : "Array",
           "title" : "info",

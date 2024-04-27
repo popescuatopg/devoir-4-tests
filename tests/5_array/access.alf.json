@@ -58,6 +58,10 @@
             "typeName" : "I64",
             "line" : 3
           }
+        },
+        "String" : {
+          "@type" : "Str",
+          "title" : "String"
         }
       },
       "functions" : { }

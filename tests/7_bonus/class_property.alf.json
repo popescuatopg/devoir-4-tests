@@ -32,6 +32,10 @@
         "s" : "school"
       },
       "types" : {
+        "String" : {
+          "@type" : "Str",
+          "title" : "String"
+        },
         "school" : {
           "@type" : "Struct",
           "title" : "school",

@@ -1,7 +1,94 @@
-[ {
-  "type" : "UNDEFINED_VARIABLE",
-  "line" : 5
-}, {
-  "type" : "UNDEFINED_ARRAY",
-  "line" : 13
-} ]
+{
+  "@type" : "Module",
+  "block" : {
+    "@type" : "Block",
+    "statements" : [ {
+      "@type" : "Assignment",
+      "to" : {
+        "@type" : "ArrayElement",
+        "array" : {
+          "@type" : "Identifier",
+          "title" : "v",
+          "typeName" : "details",
+          "line" : 13
+        },
+        "index" : {
+          "@type" : "StructElement",
+          "struct" : {
+            "@type" : "Identifier",
+            "title" : "s",
+            "typeName" : "random",
+            "line" : 13
+          },
+          "field" : "position",
+          "typeName" : "I64",
+          "line" : 13
+        },
+        "typeName" : "String",
+        "line" : 13
+      },
+      "from" : {
+        "@type" : "Value",
+        "value" : "The new name for the school",
+        "typeName" : "String",
+        "line" : 13
+      },
+      "line" : 13
+    } ],
+    "line" : 3,
+    "scope" : {
+      "@type" : "SymbolTable",
+      "variables" : {
+        "v" : "details",
+        "s" : "random"
+      },
+      "types" : {
+        "random" : {
+          "@type" : "Struct",
+          "title" : "random",
+          "properties" : [ {
+            "@type" : "Property",
+            "title" : "position",
+            "typeName" : "I64",
+            "defaultValue" : null,
+            "line" : 8
+          } ]
+        },
+        "details" : {
+          "@type" : "Array",
+          "title" : "details",
+          "typeName" : "String",
+          "length" : {
+            "@type" : "BinaryExpression",
+            "left" : {
+              "@type" : "Value",
+              "value" : "9",
+              "typeName" : "I64",
+              "line" : 3
+            },
+            "right" : {
+              "@type" : "Value",
+              "value" : "1",
+              "typeName" : "I64",
+              "line" : 3
+            },
+            "op" : "SUB",
+            "typeName" : "I64",
+            "line" : 3
+          }
+        },
+        "String" : {
+          "@type" : "Str",
+          "title" : "String"
+        },
+        "I64" : {
+          "@type" : "Integer",
+          "itype" : "I64",
+          "title" : "I64"
+        }
+      },
+      "functions" : { }
+    }
+  },
+  "line" : 3
+}

@@ -1,4 +1,131 @@
-[ {
-  "type" : "MISSING_RETURN_STATEMENT",
-  "line" : 6
-} ]
+{
+  "@type" : "Module",
+  "block" : {
+    "@type" : "Block",
+    "statements" : [ {
+      "@type" : "Assignment",
+      "to" : {
+        "@type" : "Identifier",
+        "title" : "n",
+        "typeName" : "I64",
+        "line" : 11
+      },
+      "from" : {
+        "@type" : "Value",
+        "value" : "3",
+        "typeName" : "I64",
+        "line" : 11
+      },
+      "line" : 11
+    }, {
+      "@type" : "BinaryExpression",
+      "left" : {
+        "@type" : "TypeCast",
+        "from" : {
+          "@type" : "BinaryExpression",
+          "left" : {
+            "@type" : "Identifier",
+            "title" : "n",
+            "typeName" : "I64",
+            "line" : 12
+          },
+          "right" : {
+            "@type" : "FunctionCall",
+            "function" : {
+              "@type" : "Identifier",
+              "title" : "number",
+              "typeName" : "I64",
+              "line" : 12
+            },
+            "parameters" : [ {
+              "@type" : "Value",
+              "value" : "5",
+              "typeName" : "I64",
+              "line" : 12
+            } ],
+            "typeName" : "I64",
+            "line" : 12
+          },
+          "op" : "ADD",
+          "typeName" : "I64",
+          "line" : 12
+        },
+        "typeName" : "String",
+        "line" : 12
+      },
+      "right" : {
+        "@type" : "Value",
+        "value" : " text",
+        "typeName" : "String",
+        "line" : 12
+      },
+      "op" : "ADD",
+      "typeName" : "String",
+      "line" : 12
+    } ],
+    "line" : 3,
+    "scope" : {
+      "@type" : "SymbolTable",
+      "variables" : {
+        "n" : "I64"
+      },
+      "types" : {
+        "I64" : {
+          "@type" : "Integer",
+          "itype" : "I64",
+          "title" : "I64"
+        }
+      },
+      "functions" : {
+        "number" : {
+          "@type" : "Function",
+          "title" : "number",
+          "parameters" : [ {
+            "@type" : "Property",
+            "title" : "value",
+            "typeName" : "I64",
+            "defaultValue" : null,
+            "line" : 5
+          } ],
+          "statements" : {
+            "@type" : "Block",
+            "statements" : [ {
+              "@type" : "Return",
+              "expression" : {
+                "@type" : "BinaryExpression",
+                "left" : {
+                  "@type" : "Value",
+                  "value" : "3",
+                  "typeName" : "I64",
+                  "line" : 7
+                },
+                "right" : {
+                  "@type" : "Value",
+                  "value" : "4",
+                  "typeName" : "I64",
+                  "line" : 7
+                },
+                "op" : "ADD",
+                "typeName" : "I64",
+                "line" : 7
+              },
+              "typeName" : "I64",
+              "line" : 7
+            } ],
+            "line" : 6,
+            "scope" : {
+              "@type" : "SymbolTable",
+              "variables" : {
+                "value" : "I64"
+              },
+              "types" : { },
+              "functions" : { }
+            }
+          },
+          "returnTypeName" : "I64"
+        }
+      }
+    }
+  },
+  "line" : 3
+}
