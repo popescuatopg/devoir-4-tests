@@ -16,7 +16,7 @@
         }, {
           "@type" : "Property",
           "title" : "private",
-          "typeName" : "bool",
+          "typeName" : "Boolean",
           "defaultValue" : null,
           "line" : 5
         }, {
