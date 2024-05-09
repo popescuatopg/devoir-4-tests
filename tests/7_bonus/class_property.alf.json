@@ -36,6 +36,10 @@
           "@type" : "Str",
           "title" : "String"
         },
+        "Boolean" : {
+          "@type" : "Boolean",
+          "title" : "Boolean"
+        },
         "school" : {
           "@type" : "Struct",
           "title" : "school",
