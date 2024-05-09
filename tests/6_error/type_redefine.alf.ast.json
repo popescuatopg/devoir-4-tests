@@ -24,7 +24,7 @@
         "properties" : [ {
           "@type" : "Property",
           "title" : "title",
-          "typeName" : "string",
+          "typeName" : "String",
           "defaultValue" : null,
           "line" : 8
         } ]
