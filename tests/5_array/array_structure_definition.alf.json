@@ -2,44 +2,12 @@
   "@type" : "Module",
   "block" : {
     "@type" : "Block",
-    "statements" : [ {
-      "@type" : "Assignment",
-      "to" : {
-        "@type" : "StructElement",
-        "struct" : {
-          "@type" : "ArrayElement",
-          "array" : {
-            "@type" : "Identifier",
-            "title" : "mySchools",
-            "typeName" : "school_array",
-            "line" : 12
-          },
-          "index" : {
-            "@type" : "Value",
-            "value" : "1",
-            "typeName" : "I64",
-            "line" : 12
-          },
-          "typeName" : "school",
-          "line" : 12
-        },
-        "field" : "name",
-        "typeName" : "String",
-        "line" : 12
-      },
-      "from" : {
-        "@type" : "Value",
-        "value" : "School",
-        "typeName" : "String",
-        "line" : 12
-      },
-      "line" : 12
-    } ],
+    "statements" : [ ],
     "line" : 3,
     "scope" : {
       "@type" : "SymbolTable",
       "variables" : {
-        "mySchools" : "school_array"
+        "list_of_schools" : "school_array"
       },
       "types" : {
         "school_array" : {
